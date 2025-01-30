@@ -1,0 +1,160 @@
+/* Reset básico para remover estilos padrão do navegador */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset de tipografia: herda fonte para elementos e remove estilos padrão */
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+/* Corpo do documento com largura total */
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+    text-rendering: optimizeLegibility;
+}
+
+/* Removendo sublinhado e cores padrões de links */
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Reset para listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Títulos sem margens extras */
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+/* Reset para formulários */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Removendo estilos padrão de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/* Corrigindo imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Definindo a box-sizing global */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Corrigindo altura da área de texto */
+textarea {
+    resize: vertical;
+}
+
+/* Removendo estilos padrão de elementos de mídia */
+audio, video {
+    display: block;
+    width: 100%;
+}
+
+/* Removendo estilos padrão de botões no iOS */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    appearance: none;
+}
+
+/* Reset para elementos de formulário no iOS */
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Ajuste para tornar elementos interativos mais acessíveis */
+:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+/* Removendo realce azul em mobile ao tocar */
+a,
+button,
+input,
+textarea {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Reset de elementos obsoletos que ainda podem ser usados */
+abbr[title] {
+    text-decoration: underline dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
