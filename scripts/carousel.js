@@ -1,22 +1,17 @@
-const carousel = document.querySelector('.carousel-container');
-const cards = document.querySelectorAll('.card');
-let cardIndex = 0;
+document.addEventListener('DOMContentLoaded', function() {
+  const splide = new Splide('.splide', { // Use 'Splide' com 'S' maiúsculo
+    type: 'loop',
+    perPage: 2,
+    pagination: false,
+    breakpoints: {
+      425: {
+        perPage: 1,
+      },
+    },
+    autoplay: true,
+    interval: 2000,
+    arrows: true, // Ativa as setas padrão do Splide
+  });
 
-function showCard(n) {
-  cards[cardIndex].style.display = 'none';
-  cardIndex = (n + cards.length) % cards.length;
-  cards[cardIndex].style.display = 'block';
-}
-
-// Mostrar o próximo slide
-function nextCard() {
-  showCard(cardIndex + 1);
-}
-
-// Mostrar o slide anterior
-function prevCard() {
-  showCard(cardIndex - 1);
-}
-
-// Chamar a função para mostrar o primeiro slide
-showCard(cardIndex);
+  splide.mount();
+});

@@ -1,160 +1,178 @@
-/* Reset básico para remover estilos padrão do navegador */
+/*
+  Reseta ou normaliza os estilos padrão dos navegadores para fornecer uma base consistente.
+  Baseado em resets e normalizações comuns, com foco na clareza e manutenção.
+*/
+
+/* Remove margens e paddings de todos os elementos */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Modelo de caixa para incluir padding e border no tamanho do elemento */
 }
 
-/* Reset de tipografia: herda fonte para elementos e remove estilos padrão */
+/* Define comportamentos básicos para o elemento html */
 html {
-    font-size: 100%;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
+  font-size: 100%; /* Garante que 1rem = 16px por padrão */
+  line-height: 1.5; /* Melhora a legibilidade do texto */
+  -webkit-text-size-adjust: 100%; /* Previne ajustes de tamanho de texto em navegadores iOS */
+  -ms-text-size-adjust: 100%; /* Previne ajustes de tamanho de texto no IE */
+  -moz-osx-font-smoothing: grayscale; /* Melhora a renderização de fontes no macOS */
+  -webkit-font-smoothing: antialiased; /* Melhora a renderização de fontes em navegadores WebKit */
+  scroll-behavior: smooth; /* Ativa a rolagem suave para links de âncora */
 }
 
-/* Corpo do documento com largura total */
+/* Estilos básicos para o body */
 body {
-    font-family: sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    color: #000;
-    text-rendering: optimizeLegibility;
+  font-family: sans-serif; /* Define uma fonte sans-serif genérica como padrão (será substituída no style.css) */
+  font-weight: 400; /* Define o peso da fonte padrão */
+  background-color: #fff; /* Define um fundo branco padrão (será substituído no style.css) */
+  color: #000; /* Define uma cor de texto preta padrão (será substituída no style.css) */
+  text-rendering: optimizeLegibility; /* Otimiza a renderização de texto para melhor leitura */
 }
 
-/* Removendo sublinhado e cores padrões de links */
+/* Estilos para links */
 a {
-    text-decoration: none;
-    color: inherit;
-    background-color: transparent;
+  text-decoration: none; /* Remove a decoração de texto padrão */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  background-color: transparent; /* Define o fundo como transparente por padrão */
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-/* Reset para listas */
+/* Estilos para listas */
 ul,
 ol {
-    list-style: none;
+  list-style: none; /* Remove os marcadores de lista padrão */
 }
 
-/* Títulos sem margens extras */
-h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
+/* Estilos para headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit; /* Herda o tamanho da fonte do elemento pai */
+  font-weight: inherit; /* Herda o peso da fonte do elemento pai */
+  margin: 0; /* Remove margens padrão */
 }
 
-/* Reset para formulários */
+/* Estilos para elementos de formulário */
 input,
 button,
 textarea,
 select {
-    font: inherit;
-    color: inherit;
-    border: none;
-    background: none;
-    outline: none;
+  font: inherit; /* Herda a fonte do elemento pai */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  border: 0; /* Remove a borda padrão */
+  background: 0; /* Remove o fundo padrão */
+  outline: 0; /* Remove a borda de foco padrão */
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
 }
 
-/* Removendo estilos padrão de tabelas */
+/* Estilos para tabelas */
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
+  border-collapse: collapse; /* Colapsa as bordas da tabela em uma única borda */
+  border-spacing: 0; /* Remove o espaçamento entre as células da tabela */
+  width: 100%; /* Faz a tabela ocupar a largura total do container pai */
 }
 
-/* Corrigindo imagens responsivas */
+/* Estilos para imagens */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container pai */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove espaçamento extra abaixo da imagem */
 }
 
-/* Definindo a box-sizing global */
+/* Garante que o box-sizing seja herdado corretamente */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+/* Aplica o box-sizing a todos os elementos e pseudo-elementos */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-/* Corrigindo altura da área de texto */
+/* Estilos específicos para textarea */
 textarea {
-    resize: vertical;
+  resize: vertical; /* Permite redimensionamento vertical da textarea */
 }
 
-/* Removendo estilos padrão de elementos de mídia */
-audio, video {
-    display: block;
-    width: 100%;
+/* Estilos para elementos de áudio e vídeo */
+audio,
+video {
+  display: block;
+  width: 100%;
 }
 
-/* Removendo estilos padrão de botões no iOS */
+/* Remove a aparência padrão de botões e inputs específicos */
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    appearance: none;
+  appearance: none;
 }
 
-/* Reset para elementos de formulário no iOS */
+/* Remove a aparência padrão do input de pesquisa */
 input[type="search"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-/* Ajuste para tornar elementos interativos mais acessíveis */
+/* Estilo para o foco (melhoria de acessibilidade) */
 :focus {
-    outline: 2px solid #000;
-    outline-offset: 2px;
+  outline: 2px solid #000;
+  outline-offset: 2px;
 }
 
-/* Removendo realce azul em mobile ao tocar */
+/* Remove o destaque azul ao tocar em elementos interativos em dispositivos móveis */
 a,
 button,
 input,
 textarea {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Reset de elementos obsoletos que ainda podem ser usados */
+/* Estilos para abreviações */
 abbr[title] {
-    text-decoration: underline dotted;
+  text-decoration: underline dotted; /* Adiciona um sublinhado pontilhado para indicar uma abreviação */
 }
 
-b, strong {
-    font-weight: bold;
+/* Estilos para texto em negrito */
+b,
+strong {
+  font-weight: bold;
 }
 
+/* Estilos para texto pequeno */
 small {
-    font-size: 80%;
+  font-size: 80%;
 }
 
-sub, sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
-    vertical-align: baseline;
+/* Estilos para subscrito e sobrescrito */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
-

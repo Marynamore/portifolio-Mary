@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide-core.min.css">
+    
     <link rel="stylesheet" href="./css/styles.css">
     <title>Portifólio Marina</title>
     <link rel="shortcut icon" href="./assets/favicon_io/favicon.ico" type="image/x-icon">
@@ -14,38 +16,44 @@
   <div id="particles-js"></div>
     <header>
         <nav>
-            <div class="logo">
-                <img src="./assets/logo-Mary.png" alt="Logo Marina">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#conhecimento"><i class="fa-solid fa-code"></i>Conhecimentos</a></li>
-                <li><a href="#projetos"><i class="fa-solid fa-rocket"></i>Projetos</a></li>
-                <li><a href="#sobre"><i class="fa-solid fa-user"></i>Sobre Mim</a></li>
-                <li><a href="#contatos"><i class="fa-solid fa-paperclip"></i>Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
+            <section class="nav">
+                <div class="logo">
+                    <img src="./assets/logo-Mary.png" alt="Logo Marina">
+                </div>
+                <div class="links">
+                    <ul class="nav-links">
+                        <li><a href="#" aria-label="Ir para a seção Home"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="#conhecimento" aria-label="Ir para a seção Conhecimentos"><i class="fa-solid fa-code"></i>Conhecimentos</a></li>
+                        <li><a href="#projetos" aria-label="Ir para a seção Projetos"><i class="fa-solid fa-rocket"></i>Projetos</a></li>
+                        <li><a href="#sobre" aria-label="Ir para a seção Sobre"><i class="fa-solid fa-user"></i>Sobre Mim</a></li>
+                        <li><a href="#contatos" aria-label="Ir para a seção Contato"><i class="fa-solid fa-paperclip"></i>Contato</a></li>
+                    </ul>                    
+                </div>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>               
+            </section>
         </nav>
         <div class="container">
             <div class="intro">
                 <h1>
                     Olá! <span>👋</span><br>
-                    <p>Sou <span>Marina Oliveira</span>, Apaixonada por tecnologia e com o poder que ela tem de transformar vidas.
+                    <p>
+                        Sou 
+                        <span>Marina Oliveira</span>, Apaixonada por tecnologia e com o poder que ela tem de transformar vidas.
                     </p>
                 </h1>
-                <h4>Web Developer</h4>
+                <h4>Desenvolvedora FullStack</h4>
                 <div class="social">
-                    <a href="https://www.instagram.com/rootby.mary/" target="_blank">
+                    <a href="https://www.instagram.com/rootby.mary/" target="_blank" aria-label="Ir para o Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/marina-oliver-bri-0413938/" target="_blank">
+                    <a href="https://www.linkedin.com/in/marina-oliver-bri-0413938/" target="_blank" aria-label="Ir para o LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <a href="http://www.github.com/Marynamore" target="_blank">
+                    <a href="http://www.github.com/Marynamore" target="_blank" aria-label="Ir para o GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </div>
@@ -54,7 +62,7 @@
                 </div>
             </div>
             <div class="img-wrapper">
-                <img src="./assets/perfil.jpeg" alt="Imagem da Marina">
+                <img src="./assets/perfil.png" alt="Imagem da Marina">
             </div>
         </div>
     </header>
@@ -64,7 +72,7 @@
                 <h1><span>~$</span> cd Conhecimentos/</h1>
             </div>
             <div class="conhecimentos">
-                <div class="conhecimento">
+                <div class="conhecimento left-one">
                     <div class="conhecimento-header">
                         <i class="fab fa-html5"></i>
                         <h3>HTML & CSS</h3>
@@ -73,7 +81,7 @@
                         <p>HTML estrutura, CSS dá estilo – juntos, constroem a web!</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento left-two">
                     <div class="conhecimento-header">
                         <i class="fab fa-js"></i>
                         <h3>JavaScript</h3>
@@ -82,17 +90,16 @@
                         <p>JavaScript é uma linguagem de programação dinâmica que torna páginas web interativas.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento right-one">
                     <div class="conhecimento-header">
                         <i class="fab fa-php"></i>
-                        <h3>PHP e MySQL</h3>
+                        <h3>PHP & MySQL</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p>A dupla dinâmica para criar sites dinâmicos e interativos com banco de dados.
-                        </p>
+                        <p>A dupla dinâmica para criar sites dinâmicos e interativos com banco de dados.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento top-gnu">
                     <div class="conhecimento-header">
                         <i class="fab fa-css3-alt"></i>
                         <h3>GNU/Linux</h3>
@@ -101,25 +108,22 @@
                         <p>Liberdade, segurança e código aberto para um mundo sem limites.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento right-two">
                     <div class="conhecimento-header">
                         <i class="fab fab fa-node-js"></i>
                         <h3>NodeJs</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p> É um ambiente de execução JavaScript que permite executar código JavaScript fora do navegador.
-                        </p>
+                        <p> É um ambiente de execução JavaScript que permite executar código JavaScript fora do navegador.</p>
                     </div>
                 </div>
-                <div class="conhecimento">
+                <div class="conhecimento bottom-git">
                     <div class="conhecimento-header">
                         <i class="fab fa-github"></i>
                         <h3>Git e Github</h3>
                     </div>
                     <div class="conhecimento-text">
-                        <p> 
-                            Git é um sistema de controle de versão; GitHub é a plataforma para hospedar e colaborar em projetos usando Git.
-                        </p>
+                        <p>Git é um sistema de controle de versão; GitHub é a plataforma para hospedar e colaborar em projetos usando Git.</p>
                     </div>
                 </div>
                 <div class="conhecimentos-img-wrapper">
@@ -129,53 +133,53 @@
         </section>
         <section id="projetos" class="secao-projetos">
             <div class="sessao-header">
-                <h1><span>~$</span> cd Projetos/</h1>
+              <h1><span>~$</span> cd Projetos/</h1>
             </div>
-            <div class="projetos-carousel">
-                <button class="carousel-button left" onclick="prevSlide()">&#10094;</button>
-                <div class="carousel-container" id="carouselContainer">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <img src="./assets/img-projects/blog.png" alt="Blog I.A">
-                        </div>
-                        <div class="card-info">
-                            <h2>Blog IA</h2>
-                            <h3>HTML, CSS</h3>
-                            <p>
-                                Fui vencedora do desafio front-end sobre IA no curso de Programação Web do SENAC, desenvolvendo um blog que aprimorou minhas habilidades em pesquisa, escrita técnica e desenvolvimento web.
-                            </p>
-                            <button><a href="https://marynamore.github.io/Blog_IA/" target="_blank">Visitar</a></button>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <img src="./assets/img-projects/pagina_usu.jpeg" alt="Imagem da Pagina sobre CRUD do Usuario">
-                        </div>
-                        <div class="card-info">
-                            <h2>Projeto Usuário</h2>
-                            <h3>PHP e MySQL</h3>
-                            <p>
-                                Desenvolvi um site completo em PHP, MySQL e JavaScript para ensinar CRUD (Create, Read, Update, Delete), com painel administrativo intuitivo e interface moderna.
-                            </p>
-                            <button><a href="https://github.com/Marynamore/Projeto_Usuario" target="_blank">Visitar</a></button>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <img src="./assets/img-projects/blog.png" alt="Outro Projeto">
-                        </div>
-                        <div class="card-info">
-                            <h2>Outro Projeto</h2>
-                            <h3>Tecnologias</h3>
-                            <p>Descrição do outro projeto.</p>
-                            <button><a href="#" target="_blank">Visitar</a></button>
-                        </div>
-                    </div>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="card">
+                                <div class="card-img-wrapper">
+                                    <img src="./assets/img-projects/blog.png" alt="Blog I.A">
+                                </div>
+                                <div class="card-info">
+                                    <h2>Blog IA</h2>
+                                    <h3>HTML, CSS</h3>
+                                    <p>
+                                    Fui vencedora do desafio front-end sobre IA no curso de Programação Web do SENAC, desenvolvendo um blog que aprimorou minhas habilidades em pesquisa, escrita técnica e desenvolvimento web.
+                                    </p>
+                                    <button><a href="https://marynamore.github.io/Blog_IA/" target="_blank">Visitar</a></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card">
+                                <div class="card-img-wrapper">
+                                    <img src="./assets/img-projects/pagina_usu.jpeg" alt="Imagem da Pagina sobre CRUD do Usuario">
+                                </div>
+                                <div class="card-info">
+                                    <h2>Projeto Usuário</h2>
+                                    <h3>PHP e MySQL</h3>
+                                    <p>
+                                    Desenvolvi um site completo em PHP, MySQL e JavaScript para ensinar CRUD (Create, Read, Update, Delete), com painel administrativo intuitivo e interface moderna.
+                                    </p>
+                                    <button><a href="https://github.com/Marynamore/Projeto_Usuario" target="_blank">Visitar</a></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <button class="carousel-button right" onclick="nextSlide()">&#10095;</button>
-            </div>            
+                <!--Setas de Navegação-->
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <i class="fas fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
         </section>
         <section id="sobre">
             <div class="sessao-header">
@@ -271,27 +275,11 @@
         <p class="copy">&copy; 2024 - Portifolio desenvolvido por Marina Oliveira</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="./scripts/carousel.js"></script>
     <script src="./scripts/script.js"></script>
-    <script>
-        const openModal = document.getElementById('openModal');
-        const closeModal = document.getElementById('closeModal');
-        const modal = document.getElementById('modal');
-
-        openModal.addEventListener('click', () => {
-            modal.classList.add('active');
-        });
-
-        closeModal.addEventListener('click', () => {
-            modal.classList.remove('active');
-        });
-
-        window.addEventListener('click', (e) => {
-            if(e.target === modal){
-                modal.classList.remove('active'); 
-            } 
-        });
-    </script>
+    <script src="./scripts/contact.js"></script>
+    <script src="./scripts/modal.js"></script>
+    <script src="./scripts/orcamento.js"></script>
 </body>
 </html>
-
