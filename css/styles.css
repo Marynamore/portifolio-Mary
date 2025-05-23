@@ -592,7 +592,7 @@ blockquote p span {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente escuro */
+  background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
   background-image: url('../assets/svg/Quadradinhos-desktop.1730889067.svg');
@@ -611,7 +611,7 @@ blockquote p span {
   backdrop-filter: blur(10px);
   border: 0.2rem solid var(--primary-color);
   box-shadow: 0 0.5rem 1rem 1rem #6a309373;
-  background-color: #111; /* Fundo escuro para o modal */
+  background-color: #111;
   color: var(--text-color-light);
 }
 
@@ -950,5 +950,10 @@ footer p.copy {
   .contato-wrapper form {
     margin: 0 10%; /* Reduz a margem do formulário de contato */
     padding: 5%;
+  }
+
+  .modal.active {
+    margin-top: 15%;
+    height: auto;
   }
 }
