@@ -18,7 +18,7 @@ body {
   font-family: var(--font-family-primary);
   font-size: 1.5rem;
   height: 100%;
-  overflow-x: hidden; /* Evita barra de rolagem horizontal */
+  overflow-x: hidden;
 }
 
 /* Fundo de partículas */
@@ -33,7 +33,7 @@ body {
 
 /* ======================= HEADER =========================== */
 header {
-  height: 100vh; /* Ocupa 100% da altura da viewport */
+  height: 100vh;
 }
 
 header nav {
@@ -42,16 +42,16 @@ header nav {
   left: 0;
   width: 100%;
   padding: 1rem 2rem;
-  background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-  backdrop-filter: blur(10px); /* Efeito de blur no fundo */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   z-index: 200; /* Acima do particles.js */
 }
 
 header nav section.nav{
-  width: 100%; /* Ocupa toda a largura da nav */
+  width: 100%;
   display: flex;
-  justify-content: space-between; /* Espaço entre logo e menu */
-  align-items: center; /* Alinha verticalmente os itens */
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Logo */
@@ -60,12 +60,12 @@ header nav div.logo {
 }
 
 header nav div.logo img {
-  height: 100%; /* A imagem ocupa a altura do container logo */
+  height: 100%;
   border-radius: 10px;
 }
 
 /* Links de navegação (telas maiores) */
-header nav section.nav div.links {
+header nav section.nav div.links { 
   display: flex;
   flex-grow: 1; /* Permite que os links ocupem o espaço restante */
   justify-content: center;
@@ -74,7 +74,7 @@ header nav section.nav div.links {
 header nav section.nav ul.nav-links {
   display: flex;
   list-style: none;
-  gap: 5rem; /* 80px de espaçamento entre os links */
+  gap: 5rem;
   margin: 0;
   padding: 0;
 }
@@ -86,8 +86,8 @@ header nav section.nav ul.nav-links li a {
   align-items: center;
   text-decoration: none;
   color: var(--text-color-light);
-  font-size: 1.3rem; /* 20.8px */
-  transition: color .3s; /* Transição suave na cor ao passar o mouse */
+  font-size: 1.3rem;
+  transition: color .3s;
 } 
 
 /* Menu hambúrguer (mobile) */
@@ -99,7 +99,7 @@ header nav section.nav div.hamburger {
   cursor: pointer;
   z-index: 200;
   padding: 0;
-  display: none; /* Esconde o hambúrguer em telas maiores por padrão */
+  display: none;
 }
 
 header nav section.nav div.hamburger .line {
@@ -108,8 +108,8 @@ header nav section.nav div.hamburger .line {
   background-color: var(--text-color-light);
   margin: 3px 0;
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Transições para a animação do "X" */
-  z-index: 300; /* Acima das outras linhas */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 300;
 }
 
 header nav section.nav div.hamburger.active .line:nth-child(1) {
@@ -124,34 +124,6 @@ header nav section.nav div.hamburger.active .line:nth-child(3) {
   transform: rotate(-45deg) translate(5px,-5px);
 }
 
-/* Menu de navegação responsivo (mobile) - Visibilidade controlada por JS */
-header nav section.nav div.links ul.nav-links.active { /* Estilos para a lista ativa em telas menores */
-  display: flex;
-  flex-direction: column;
-  position: fixed; /* Mantido como fixed para sobrepor o conteúdo */
-  top: 5rem; /* 80px, abaixo da nav */
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 2rem 1rem; /* 32px vertical, 16px horizontal */
-  z-index: 300;
-  transform: translateY(0);
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 60%;
-  height: 100vh;
-}
-
-header nav section.nav div.links ul.nav-links.active li {
-  margin-bottom: 1.5rem; /* 24px de margem inferior */
-  width: 100%;
-}
-
-header nav section.nav div.links ul.nav-links.active li a {
-  font-size: 1.5rem; /* 24px */
-  padding: 0.5rem 0; /* 8px vertical */
-  display: block;
-}
-
 /* Container principal do conteúdo abaixo do header */
 div.container {
   position: relative;
@@ -159,7 +131,7 @@ div.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6.25rem 3.125rem 0; /* 100px vertical, 50px horizontal */
+  padding: 6.25rem 3.125rem 0;
 }
 
 /* Seção de introdução */
@@ -169,15 +141,15 @@ div.intro {
 }
 
 div.intro h1 {
-  font-size: 2.5rem; /* 40px */
+  font-size: 2.5rem;
   color: var(--text-color-light);
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 div.intro h1 p {
-  font-size: 2rem; /* 32px */
+  font-size: 2rem;
   color: var(--text-color-light);
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 div.intro h1 span {
@@ -185,26 +157,26 @@ div.intro h1 span {
 }
 
 div.intro h4 {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   color: var(--primary-color);
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 1rem;
 }
 
 /* Ícones sociais */
 div.social {
   display: flex;
-  gap: 1rem; /* 16px de espaçamento */
+  gap: 1rem;
 }
 
 div.social a i {
   color: #d9b6fc;
-  font-size: 2.2rem; /* 35.2px */
+  font-size: 2.2rem;
   cursor: pointer;
 }
 
 /* Botão de download do currículo */
 div.curriculum {
-  margin-top: 3rem; /* 48px */
+  margin-top: 3rem;
 }
 
 div.curriculum a {
@@ -238,7 +210,7 @@ div.curriculum a {
   }
 
   50% {
-    transform: translateY(-0.625rem);/* -10px */
+    transform: translateY(-0.625rem);
   }
 }
 
@@ -351,7 +323,7 @@ div.conhecimentos {
 }
 
 .conhecimento-text p {
-  font-size: 1rem; /* 16px (padrão para o texto) */
+  font-size: 1rem;
 }
 
 /* ======================= MAIN(Projetos) =========================== */
@@ -387,7 +359,7 @@ div.conhecimentos {
   box-shadow: 0 0.1rem 1rem 0.5rem #6a309373;
   border-radius: 0.8rem;
   padding: 1%;
-  box-sizing: border-box; /* Inclui padding na largura */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
 }
@@ -395,13 +367,13 @@ div.conhecimentos {
 .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
   width: 100%;
   max-height: 50vh;
-  margin-bottom: 1rem; /* Adicionado margem abaixo da imagem */
+  margin-bottom: 1rem;
 }
 
 .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper img {
   object-fit: cover;
   width: 100%;
-  height: 100%; /* A imagem ocupa toda a altura do wrapper */
+  height: 100%;
   margin-bottom: 0; /* Removida margem duplicada */
 }
 
@@ -412,7 +384,7 @@ div.conhecimentos {
   flex-grow: 1; /* O info ocupa o espaço restante */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Espaço entre texto e botão */
+  justify-content: space-between;
 }
 
 .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
@@ -436,7 +408,7 @@ div.conhecimentos {
   margin-bottom: 1rem;
   text-align: justify;
   font-size: 0.9rem;
-  line-height: 1.4; /* Melhora a legibilidade */
+  line-height: 1.4;
 }
 
 .splide__slide .card-info button,
@@ -453,7 +425,7 @@ div.conhecimentos {
   border-radius: 0.5rem;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  align-self: flex-start; /* Alinha o botão à esquerda */
+  align-self: flex-start;
 }
 
 .splide__slide .card-info button a {
@@ -503,7 +475,7 @@ div.conhecimentos {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr); /* Três colunas, cada uma com metade da largura de uma unidade de fração */
+  grid-template-columns: repeat(3, 0.5fr);
   gap: 0.625rem;
 }
 
@@ -517,8 +489,8 @@ div.conhecimentos {
 .gallery-item img {
   object-fit: cover;
   border-radius: 0.5rem;
-  width: 70%; /* Largura da imagem dentro do item, ajuste com cuidado se a proporção não for boa */
-  height: 90%; /* Altura da imagem dentro do item */
+  width: 70%;
+  height: 90%;
   display: block;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -534,14 +506,14 @@ div.conhecimentos {
   line-height: 1.5;
   text-align: justify;
   color: var(--text-color-dark);
-  margin-left: 2rem; /* Adiciona uma margem padrão para separar da galeria */
+  margin-left: 2rem; 
 }
 
 .description blockquote {
   font-style: italic;
   border-left: 0.2rem solid #4b0082;
   padding-left: 0.625rem;
-  margin-top: 1rem; /* 16px */
+  margin-top: 1rem;
 }
 
 blockquote p span {
@@ -592,12 +564,12 @@ blockquote p span {
   cursor: pointer;
   background-color: #222;
   color: var(--text-color-light);
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  box-sizing: border-box; 
 }
 
 /* ======================= MAIN(Orçamento) =========================== */
 .modal {
-  display: none; /* Oculto por padrão */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -609,7 +581,7 @@ blockquote p span {
   background-image: url('../assets/svg/Quadradinhos-desktop.1730889067.svg');
   background-repeat: no-repeat;
   background-size: cover; /* Garante que a imagem cubra a área, especialmente em paisagem */
-  z-index: 9999; /* Um z-index bem alto para garantir que fique acima de tudo */
+  z-index: 9999;
   overflow-y: auto; /* Permite scroll se o conteúdo for muito grande */
   -webkit-overflow-scrolling: touch; /* Suaviza o scroll em iOS */
 }
@@ -628,7 +600,7 @@ blockquote p span {
   box-shadow: 0 0.5rem 1rem 1rem #6a309373;
   background-color: #111;
   color: var(--text-color-light);
-  margin: 2rem auto; /* Adiciona uma margem para centralizar verticalmente em telas maiores */
+  margin: 2rem auto;
   box-sizing: border-box; /* Garante que padding e borda não aumentem a largura total */
 }
 
@@ -674,10 +646,10 @@ blockquote p span {
 
 .orcamento-wrapper input[type="number"],
 .orcamento-wrapper input[type="range"] {
-  width: 100%; /* Garante que ocupe 100% do espaço disponível */
-  padding: 0.625rem; /* 10px */
-  margin-bottom: 1rem; /* 16px */
-  font-size: 1rem; /* 16px */
+  width: 100%;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   background-color: #222;
   color: var(--text-color-light);
   border: 0.1rem solid #ccc;
@@ -688,7 +660,7 @@ blockquote p span {
 .orcamento-wrapper input[type="checkbox"] + label,
 .orcamento-wrapper input[type="radio"] + label {
   color: var(--text-color-light);
-  font-size: 0.95rem; /* 15.2px */
+  font-size: 0.95rem;
 }
 
 .orcamento-wrapper .group-layout {
@@ -709,8 +681,8 @@ blockquote p span {
 }
 
 .orcamento-wrapper input[type="submit"] {
-  width: auto; /* Deixa a largura automática para o padding */
-  padding: 0.625rem 2rem; /* 10px vertical, 32px horizontal */
+  width: auto;
+  padding: 0.625rem 2rem;
 }
 
 .orcamento-wrapper input[type="submit"]:hover {
@@ -735,1412 +707,4 @@ footer {
 footer p.copy {
   font-size: 1rem;
   color: var(--text-color-dark);
-}
-
-/* ============================================== */
-/* MEDIA QUERIES GERAIS DE RESPONSIVIDADE */
-/* ============================================== */
-
-/* ---------------------------------------------- */
-/* Extra Small devices (smartphones, 0px to 424px) */
-/* Celulares muito pequenos (Retrato) */
-/* ---------------------------------------------- */
-@media (max-width: 424px) {
-  header {
-    height: auto; /* A altura se adapta ao conteúdo em telas pequenas */
-  }
-
-  header nav {
-    padding: 0.5rem 1rem; /* 8px vertical, 16px horizontal */
-  }
-
-  header nav div.logo {
-    height: 10vw; /* Logo maior em telas muito pequenas */
-  }
-
-  header nav div.logo img {
-    height: 100%; /* Mantém a altura da imagem dentro do container */
-    border-radius: 10%; /* Ajuste o raio se necessário */
-  }
-
-  header nav section.nav {
-    flex-direction: column; /* Organiza logo, links e hambúrguer em coluna */
-    align-items: flex-start; /* Alinha à esquerda */
-    width: 100%;
-  }
-
-  header nav section.nav div.links {
-    display: none; /* Esconde os links por padrão */
-    width: 100%;
-  }
-
-  header nav section.nav div.links.active {
-    padding: 1rem 0.5rem; /* 16px vertical, 8px horizontal no menu aberto */
-    top: 5rem; /* Ajusta a posição do menu aberto */
-    width: 90%; /* Ocupa mais largura em telas muito pequenas */
-    height: auto; /* Altura se ajusta ao conteúdo */
-    max-height: 80vh; /* Limita a altura para evitar overflow */
-    overflow-y: auto; /* Adiciona scroll se o conteúdo exceder */
-    position: fixed; /* Mantém o menu fixo e sobreposto */
-    right: 5%; /* Centraliza o menu ou ajusta para direita */
-    left: 5%; /* Centraliza o menu ou ajusta para esquerda */
-    transform: translateX(0); /* Garante que não haja deslocamento */
-  }
-
-  header nav section.nav div.links.active ul.nav-links {
-    gap: 0.8rem; /* 12.8px de espaçamento entre os links */
-  }
-
-  header nav section.nav div.links.active ul.nav-links li a {
-    font-size: 1rem; /* 16px */
-    padding: 0.6rem 0; /* 9.6px vertical */
-    text-align: center; /* Centraliza o texto dos links */
-  }
-
-  header nav section.nav div.hamburger {
-    display: flex; /* Mostra o hambúrguer */
-    align-self: flex-end; /* Alinha o hambúrguer à direita */
-    position: absolute; /* Para posicionar em relação ao nav */
-    top: 1rem; /* Ajusta a posição vertical do hambúrguer */
-    right: 1rem; /* Ajusta a posição horizontal do hambúrguer */
-  }
-
-  /* Container principal do conteúdo */
-  div.container {
-    padding: 3rem 0.5rem; /* 48px vertical, 8px horizontal */
-    flex-direction: column-reverse; /* Conteúdo em coluna */
-    align-items: center; /* Centraliza itens */
-    text-align: center; /* Centraliza texto */
-  }
-
-  div.intro {
-    max-width: 95%; /* Ocupa quase toda a largura */
-    padding: 3%;
-    margin-bottom: 1.5rem; /* 24px de margem inferior */
-  }
-
-  div.intro h1 {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  div.intro h1 p {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 0.8rem;
-  }
-
-  div.intro h4 {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.8rem;
-  }
-
-  div.social {
-    justify-content: center; /* Centraliza ícones sociais */
-    gap: 0.8rem; /* 12.8px */
-  }
-
-  div.social a i {
-    font-size: 1.8rem; /* 28.8px */
-  }
-
-  div.curriculum {
-    margin-top: 1rem; /* 16px */
-  }
-
-  div.curriculum a {
-    font-size: 0.9rem; /* 14.4px */
-    padding: 2% 4%; /* Ajusta o padding do botão */
-  }
-
-  .img-wrapper {
-    height: auto; /* Altura se ajusta ao conteúdo */
-    padding: 3%;
-  }
-
-  .img-wrapper img {
-    height: 40vh; /* Altura da imagem para celulares pequenos */
-  }
-
-  div.conhecimentos {
-    /* Ajusta a grade para uma visualização linear em telas muito pequenas */
-    display: flex; /* Mudar para flexbox para organizar em coluna */
-    flex-direction: column;
-    align-items: center; /* Centraliza os itens */
-    gap: 1.5rem; /* 24px de espaçamento entre os cards */
-    padding: 1rem; /* 16px de padding geral */
-  }
-
-  /* Resetando as propriedades de grid para que o flexbox assuma o controle */
-  .conhecimento,
-  .conhecimento:nth-child(1),
-  .conhecimento:nth-child(2),
-  .conhecimento:nth-child(3),
-  .conhecimento:nth-child(4),
-  .conhecimento:nth-child(5),
-  .conhecimento:nth-child(6),
-  .conhecimentos-img-wrapper {
-    grid-column: auto;
-    grid-row: auto;
-    width: 90%; /* Ajusta a largura dos cards e da imagem */
-    margin: 0 auto; /* Centraliza */
-  }
-
-  .conhecimentos-img-wrapper {
-    order: -1; /* Coloca a imagem no topo da ordem flex */
-    margin-bottom: 1.5rem; /* Espaço abaixo da imagem */
-  }
-
-  .conhecimentos-img-wrapper img {
-    max-width: 80%; /* Ajusta o tamanho da imagem de dentro */
-    height: auto;
-  }
-
-  .sessao-header {
-    margin: 3rem 1rem; /* Margem reduzida para o título da seção */
-  }
-
-  .sessao-header h1 {
-    font-size: 0.9rem; /* 14.4px */
-    padding: 0.5rem 1rem; /* 8px vertical, 16px horizontal */
-  }
-
-  .sessao-header::before,
-  .sessao-header::after {
-    margin: 0 0.3rem; /* 4.8px */
-  }
-
-  .conhecimento-header {
-    text-align: center;
-    padding-bottom: 0.5rem; /* 8px */
-  }
-
-  .conhecimento-header i {
-    font-size: 1.5rem; /* 24px */
-    margin-right: 0.5rem;
-    margin-bottom: 0.3rem; /* 4.8px */
-  }
-
-  .conhecimento-header h3 {
-    font-size: 1.1rem; /* 17.6px */
-    padding-left: 0;
-  }
-
-  .conhecimento-text {
-    margin-top: 0.8rem; /* 12.8px */
-  }
-
-  .conhecimento-text p {
-    font-size: 0.85rem; /* 13.6px */
-  }
-
-  .secao-projetos .splide {
-    width: 95%; /* Ocupa quase toda a largura da tela */
-    margin: 1rem auto; /* 16px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
-    flex: 0 0 15%; /* Cada slide ocupa quase 100% da largura, mostrando 1 por vez */
-    /* Removido o calc() para simplificar o cálculo em telas muito pequenas */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
-    padding: 2%; /* Padding percentual para se ajustar ao card */
-    border-width: 0.15rem; /* 2.4px */
-    border-radius: 0.6rem; /* 9.6px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
-    max-height: 35vh; /* Altura reduzida da imagem */
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info {
-    padding: 0 0.8rem; /* 12.8px horizontal */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.4rem; /* 6.4px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.8rem; /* 12.8px */
-    margin-bottom: 0.6rem; /* 9.6px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.8rem; /* 12.8px */
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  .splide__slide .card-info button {
-    width: 7rem; /* 112px */
-    height: 2.2rem; /* 35.2px */
-    font-size: 0.9rem; /* 14.4px */
-    border-radius: 0.4rem; /* 6.4px */
-  }
-
-  .splide__slide .card-info button a {
-    font-size: 1rem; /* 16px */
-  }
-
-  .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2rem !important; /* 32px */
-    padding: 0.7rem !important; /* 11.2px */
-  }
-
-  .profile {
-    padding: 3%; /* Reduz padding */
-    flex-direction: column; /* Empilha a galeria e a descrição */
-    align-items: center; /* Centraliza itens */
-    text-align: center; /* Centraliza texto */
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Passa para 2 colunas */
-    gap: 0.5rem; /* 8px */
-    width: 100%; /* Ocupa a largura total disponível */
-    margin-bottom: 2rem; /* Espaço entre a galeria e a descrição */
-  }
-
-  .gallery-item img {
-    width: 90%; /* Aumenta a largura da imagem para preencher mais o item */
-    height: 90%; /* Mantém a altura */
-  }
-
-  .description {
-    max-width: 90%; /* Ocupa mais largura em telas pequenas */
-    font-size: 0.9rem; /* 14.4px */
-    line-height: 1.4;
-    margin-left: 0; /* Remove a margem lateral */
-    padding: 0 1rem; /* Adiciona um padding horizontal */
-  }
-
-  .description blockquote {
-    padding-left: 0.5rem; /* 8px */
-    border-left-width: 0.15rem; /* 2.4px */
-    margin-top: 0.8rem; /* 12.8px */
-  }
-
-    .contatos {
-    margin-top: 3rem; /* 48px */
-    padding-bottom: 2rem; /* 32px */
-  }
-
-  .contato-wrapper form {
-    margin: 0 5%; /* Margem bem reduzida para ocupar quase toda a largura */
-    padding: 6%; /* Aumenta um pouco o padding para dar mais ar */
-    border-width: 0.1rem; /* 1.6px */
-    box-shadow: 0 0.3rem 0.6rem 0.6rem #6a309373; /* Sombra um pouco menor */
-    border-radius: 0.4rem; /* 6.4px */
-    gap: 0.5rem; /* 8px */
-  }
-
-  #contato label {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.2rem; /* 3.2px */
-  }
-
-  #contato input,
-  #contato textarea {
-    padding: 0.5rem; /* 8px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.8rem; /* 12.8px */
-    border-width: 0.08rem; /* 1.28px */
-  }
-
-  .modal {
-    background-repeat: no-repeat; /* Ajusta para que a imagem não se repita */
-    background-position: center; /* Centraliza a imagem */
-    background-size: cover; /* Garante que a imagem cubra toda a área */
-  }
-
-  .modal-content {
-    padding: 0.8rem; /* 12.8px */
-    border-radius: 0.4rem; /* 6.4px */
-    width: 95%; /* Ocupa quase toda a largura */
-    margin: 1rem auto; /* 16px */
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373; /* Sombra ajustada */
-  }
-
-  .orcamento-wrapper h1 {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  .orcamento-wrapper form {
-    padding: 6%; /* Padding do formulário */
-    gap: 0.5rem; /* 8px */
-  }
-
-  .close-btn {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.3rem; /* 4.8px */
-  }
-
-  .orcamento-wrapper textarea,
-  .orcamento-wrapper input[type="number"],
-  .orcamento-wrapper input[type="range"] {
-    padding: 0.5rem; /* 8px */
-    height: 6rem; /* 96px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.9rem; /* 14.4px */
-    border-width: 0.08rem; /* 1.28px */
-  }
-
-  .orcamento-wrapper input[type="checkbox"] + label,
-  .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.85rem; /* 13.6px */
-  }
-
-  .orcamento-wrapper .group-layout {
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.4rem; /* 6.4px */
-  }
-
-  .orcamento-wrapper .group-layout label {
-    margin-left: 0.4rem; /* 6.4px */
-  }
-
-  .orcamento-wrapper input[type="submit"] {
-    padding: 0.5rem 1.5rem; /* 8px vertical, 24px horizontal */
-    font-size: 0.9rem; /* 14.4px */
-    border-radius: 0.4rem; /* 6.4px */
-  }
-
-  footer {
-    margin-top: 1rem; /* 16px */
-    padding: 0.8rem 1rem; /* 12.8px vertical, 16px horizontal */
-  }
-
-  footer p.copy {
-    font-size: 0.8rem; /* 12.8px */
-  }
-}
-
-/* ---------------------------------------------- */
-/* Small devices (tablets and some phones, 425px to 767px) */
-/* Sua media query anterior, ajustada para esta faixa */
-/* ---------------------------------------------- */
-@media (min-width: 425px) and (max-width: 767px) {
-  header {
-    height: auto;
-  }
-
-  header nav {
-    padding: 1rem; /* 16px */
-  }
-
-  header nav section.nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  header nav div.logo {
-    height: 8vw; /* 12.8px na tela 425px, ajusta bem */
-    margin-bottom: 1rem;
-  }
-
-  header nav div.logo img {
-    height: 100%;
-    border-radius: 10%;
-  }
-
-  header nav section.nav div.links {
-    display: none;
-    width: 100%;
-  }
-
-  header nav section.nav div.links.active {
-    padding: 1.5rem 1rem; /* 24px vertical, 16px horizontal */
-    top: 5rem;
-    width: 70%; /* Largura do menu mobile */
-    height: auto; /* Altura se ajusta ao conteúdo */
-    max-height: 80vh;
-    overflow-y: auto;
-    position: fixed; /* Mantém o menu fixo e sobreposto */
-    right: 0; /* Alinha à direita */
-    left: auto; /* Desfaz o left para não conflitar */
-  }
-
-  header nav section.nav div.links.active ul.nav-links {
-    gap: 1rem; /* 16px */
-  }
-
-  header nav section.nav div.links.active ul.nav-links li a {
-    font-size: 1.2rem; /* 19.2px */
-    padding: 0.8rem 0; /* 12.8px */
-    text-align: left; /* Alinha à esquerda */
-  }
-
-  header nav section.nav div.hamburger {
-    display: flex;
-    align-self: flex-end;
-    position: absolute; /* Ajusta o posicionamento do hambúrguer */
-    top: 1rem;
-    right: 1rem;
-  }
-
-  /* Container principal do conteúdo */
-  div.container {
-    padding: 5rem 1.5rem; /* 64px vertical, 24px horizontal */
-    align-items: center;
-    text-align: center;
-  }
-
-  div.intro {
-    max-width: 90%;
-    padding:  4%;
-    margin-bottom: 2rem; /* 32px */
-  }
-
-  div.intro h1 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem; /* 16px */
-  }
-
-  div.intro h1 p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  div.intro h4 {
-    font-size: 1rem;
-    margin-bottom: 0.9rem; /* 14.4px */
-  }
-
-  div.social {
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  div.social a i {
-    font-size: 2rem; /* 32px */
-  }
-
-  div.curriculum {
-    margin-top: 1.5rem; /* 24px */
-  }
-
-  div.curriculum a {
-    font-size: 1rem; /* 16px */
-    padding: 2.5% 5%; /* Ajusta padding */
-  }
-
-  .img-wrapper {
-    height: auto;
-    padding: 4%;
-  }
-
-  .img-wrapper img {
-    height: 45vh; /* Altura da imagem para celulares/tablets pequenos */
-  }
-
-  div.conhecimentos {
-    /* Mantendo a estrutura de grid mais simples para essa faixa, como você tinha na media query */
-    display: grid;
-    grid-template-areas:
-      "top-gnu top-gnu top-gnu"
-      "left-one img-wrapper right-one"
-      "left-two img-wrapper right-two"
-      "bottom-git bottom-git bottom-git";
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-template-rows: repeat(4, auto); /* Altura das linhas se ajusta ao conteúdo */
-    gap: 1.5rem; /* 24px de espaçamento */
-    margin: 5% auto; /* Centraliza a grade horizontalmente */
-    padding: 1.5rem; /* 24px de padding geral */
-    text-align: center; /* Centraliza o texto dentro dos cards */
-  }
-
-  .conhecimento:nth-child(1) { grid-area: top-gnu; }
-  .conhecimento:nth-child(2) { grid-area: left-one; }
-  .conhecimento:nth-child(3) { grid-area: left-two; }
-  .conhecimento:nth-child(4) { grid-area: right-one; }
-  .conhecimento:nth-child(5) { grid-area: right-two; }
-  .conhecimento:nth-child(6) { grid-area: bottom-git; }
-
-  .conhecimentos-img-wrapper {
-    grid-area: img-wrapper; /* Nome da área para a imagem */
-    width: auto; /* Largura automática para se ajustar à célula da grid */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0; /* Remove padding extra se houver */
-  }
-
-  .conhecimentos-img-wrapper img {
-    max-width: 25vh; /* Largura da imagem, agora relativa à altura da viewport */
-    height: auto;
-  }
-
-  .sessao-header {
-    margin: 4rem 10%; /* Ajusta margem do título da seção */
-  }
-
-  .sessao-header h1 {
-    font-size: 1rem; /* 16px */
-    padding: 0.5rem 1.1rem; /* 8px vertical, 17.6px horizontal */
-  }
-
-  .conhecimento-header {
-    justify-content: center; /* Centraliza ícone e título */
-    padding-bottom: 0.625rem; /* 10px */
-  }
-
-  .conhecimento-header i {
-    font-size: 1rem; /* 28.8px */
-    margin-right: 0.4rem; /* 6.4px */
-  }
-
-  .conhecimento-header h3 {
-    font-size: 1rem; /* 20.8px */
-    padding-left: 0.8rem; /* 12.8px */
-  }
-
-  .conhecimento-text {
-    margin-top: 0.8rem; /* 12.8px */
-  }
-
-  .conhecimento-text p {
-    font-size: 0.7rem; /* 14.4px */
-  }
-
-  .secao-projetos .splide {
-    width: 90%;
-    margin: 1.5rem auto; /* 24px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
-    flex: 0 0 calc(15% - 1rem); /* Cada slide ocupa quase 100% da largura, mostrando 1 por vez */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
-    padding: 1.5%;
-    border-width: 0.18rem; /* 2.88px */
-    border-radius: 0.7rem; /* 11.2px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
-    max-height: 40vh;
-    margin-bottom: 0.9rem; /* 14.4px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info {
-    padding: 0 0.9rem; /* 14.4px horizontal */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.8rem; /* 28.8px */
-    margin-bottom: 0.45rem; /* 7.2px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.65rem; /* 10.4px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.85rem; /* 13.6px */
-    margin-bottom: 0.9rem; /* 14.4px */
-  }
-
-  .splide__slide .card-info button {
-    width: 7.5rem; /* 120px */
-    height: 2.3rem; /* 36.8px */
-    font-size: 0.95rem; /* 15.2px */
-  }
-
-  .splide__slide .card-info button a {
-    font-size: 1.1rem; /* 17.6px */
-  }
-
-  .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2.2rem !important; /* 35.2px */
-    padding: 0.8rem !important; /* 12.8px */
-  }
-
-  .profile {
-    padding: 4%; /* Ajusta padding */
-    flex-direction: column; /* Empilha a galeria e a descrição */
-    align-items: center; /* Centraliza itens */
-    text-align: center; /* Centraliza texto */
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
-    gap: 0.8rem; /* 12.8px */
-    width: 80%; /* Largura um pouco mais contida */
-    margin-bottom: 2.5rem; /* Espaço entre a galeria e a descrição */
-  }
-
-  .gallery-item img {
-    width: 85%; /* Aumenta um pouco mais a largura da imagem */
-    height: 90%;
-  }
-
-  .description {
-    max-width: 85%; /* Ocupa mais largura */
-    font-size: 1rem; /* 16px */
-    line-height: 1.45;
-    margin-left: 0; /* Remove a margem lateral */
-    padding: 0 1.5rem; /* Adiciona um padding horizontal */
-  }
-
-  .description blockquote {
-    padding-left: 0.6rem; /* 9.6px */
-    border-left-width: 0.18rem; /* 2.88px */
-    margin-top: 1rem; /* 16px */
-  }
-
-  .contatos {
-    margin-top: 4rem; /* 64px */
-    padding-bottom: 2.5rem; /* 40px */
-  }
-
-  .contato-wrapper form {
-    margin: 0 10%; /* Margem da sua media query anterior */
-    padding: 5%;
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.45rem; /* 7.2px */
-    gap: 0.55rem; /* 8.8px */
-  }
-
-  #contato label {
-    font-size: 0.95rem; /* 15.2px */
-    margin-bottom: 0.25rem; /* 4px */
-  }
-
-  #contato input,
-  #contato textarea {
-    padding: 0.55rem; /* 8.8px */
-    margin-bottom: 0.9rem; /* 14.4px */
-    font-size: 0.85rem; /* 13.6px */
-    border-width: 0.09rem; /* 1.44px */
-  }
-
-  .modal-content {
-    padding: 1rem; /* 16px */
-    border-radius: 0.45rem; /* 7.2px */
-    width: 90%;
-    max-width: 25rem; /* 400px */
-    margin: 1.5rem auto; /* 24px */
-    border-width: 0.18rem; /* 2.88px */
-    box-shadow: 0 0.45rem 0.9rem 0.9rem #6a309373;
-  }
-
-  .orcamento-wrapper h1 {
-    font-size: 1.8rem; /* 28.8px */
-    margin-bottom: 0.9rem; /* 14.4px */
-  }
-
-  .orcamento-wrapper form {
-    padding: 8%;
-    gap: 0.6rem; /* 9.6px */
-  }
-
-  .close-btn {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.4rem; /* 6.4px */
-  }
-
-  .orcamento-wrapper textarea,
-  .orcamento-wrapper input[type="number"],
-  .orcamento-wrapper input[type="range"] {
-    padding: 0.55rem; /* 8.8px */
-    height: 7rem; /* 112px */
-    margin-bottom: 0.9rem; /* 14.4px */
-    font-size: 0.95rem; /* 15.2px */
-    border-width: 0.09rem; /* 1.44px */
-  }
-
-  .orcamento-wrapper input[type="checkbox"] + label,
-  .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.9rem; /* 14.4px */
-  }
-
-  .orcamento-wrapper .group-layout {
-    margin-bottom: 0.9rem; /* 14.4px */
-  }
-
-  .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.45rem; /* 7.2px */
-  }
-
-  .orcamento-wrapper .group-layout label {
-    margin-left: 0.45rem; /* 7.2px */
-  }
-
-  .orcamento-wrapper input[type="submit"] {
-    padding: 0.6rem 1.8rem; /* 9.6px vertical, 28.8px horizontal */
-    font-size: 0.95rem; /* 15.2px */
-    border-radius: 0.45rem; /* 7.2px */
-  }
-
-  footer {
-    margin-top: 1.2rem; /* 19.2px */
-    padding: 0.9rem 1.5rem; /* 14.4px vertical, 24px horizontal */
-  }
-
-  footer p.copy {
-    font-size: 0.9rem; /* 14.4px */
-  }
-}
-
-/* ---------------------------------------------- */
-/* Medium devices (tablets to small desktops, 768px to 1023px) */
-/* ---------------------------------------------- */
-@media (min-width: 768px) and (max-width: 1023px) {
-  header {
-    height: 100vh; /* Mantém a altura total da viewport para telas maiores */
-  }
-
-  header nav {
-    padding: 1rem 2rem; /* Mantém o padding original */
-  }
-
-  header nav section.nav {
-    flex-direction: row; /* Volta ao layout de linha */
-    align-items: center;
-    width: 100%;
-  }
-
-  header nav div.logo {
-    height: 6vw; /* Logo um pouco menor que o padrão */
-  }
-
-  header nav div.logo img {
-    height: 100%;
-    border-radius: 10px;
-  }
-
-  header nav section.nav div.links {
-    display: flex; /* Links visíveis */
-    justify-content: center; /* Centraliza os links no espaço restante */
-    flex-grow: 1;
-  }
-
-  header nav section.nav ul.nav-links {
-    gap: 3rem; /* 48px de espaçamento */
-  }
-
-  header nav section.nav ul.nav-links li a {
-    font-size: 1.2rem; /* 19.2px */
-  }
-
-  header nav section.nav div.hamburger {
-    display: none; /* Hambúrguer escondido */
-  }
-
-  header nav section.nav div.links ul.nav-links.active {
-    display: none; /* Garante que o menu mobile não apareça por acidente */
-  }
-
-  /* Container principal do conteúdo */
-  div.container {
-    padding: 5rem 2rem 0; /* 80px vertical, 32px horizontal */
-    flex-direction: row; /* Intro e imagem lado a lado */
-    align-items: center;
-    text-align: left; /* Volta ao alinhamento padrão */
-  }
-
-  div.intro {
-    max-width: 50%;
-    padding: 5%;
-  }
-
-  div.intro h1 {
-    font-size: 2.2rem; /* 35.2px */
-    margin-bottom: 1rem;
-  }
-
-  div.intro h1 p {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 1rem;
-  }
-
-  div.intro h4 {
-    font-size: 1.3rem; /* 20.8px */
-    margin-bottom: 0.8rem;
-  }
-
-  div.social a i {
-    font-size: 2rem; /* 32px */
-  }
-
-  div.curriculum {
-    margin-top: 2rem; /* 32px */
-  }
-
-  .img-wrapper {
-    height: auto;
-    padding: 5%;
-  }
-
-  .img-wrapper img {
-    height: 60vh; /* Altura da imagem para tablets/laptops pequenos */
-  }
-
-  div.conhecimentos {
-    /* Mantém a estrutura de grid original, mas com ajustes de tamanho */
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 5rem); /* 80px por linha, um pouco menor */
-    row-gap: 1rem; /* 16px */
-    padding: 2rem; /* 32px de padding */
-  }
-
-  /* Posições dos cards permanecem as mesmas */
-  .conhecimento:nth-child(1) { grid-column: 4 / 7; grid-row: 1 / 3; }
-  .conhecimento:nth-child(2) { grid-column: 3 / 6; grid-row: 3 / 5; }
-  .conhecimento:nth-child(3) { grid-column: 4 / 7; grid-row: 5 / -1; }
-  .conhecimento:nth-child(4) { grid-column: 11 / 14; grid-row: 1 / 3; }
-  .conhecimento:nth-child(5) { grid-column: 12 / 15; grid-row: 3 / 5; }
-  .conhecimento:nth-child(6) { grid-column: 11 / 14; grid-row: 5 / -1; }
-
-  .conhecimentos-img-wrapper {
-    grid-column: 7 / 11;
-    grid-row: 2 / 6;
-    width: 100%;
-    height: 100%; /* Garante que preencha o espaço da grade */
-  }
-
-  .conhecimentos-img-wrapper img {
-    object-fit: contain; /* Melhor para manter a proporção da imagem dentro do grid */
-    height: 100%;
-    width: 100%;
-  }
-
-  .sessao-header {
-    margin: 5% 10%; /* Ajusta margem do título da seção */
-  }
-
-  .sessao-header h1 {
-    font-size: 1.1rem; /* 17.6px */
-    padding: 0.6rem 1.2rem; /* 9.6px vertical, 19.2px horizontal */
-  }
-
-  .conhecimento-header i {
-    font-size: 1.6rem; /* 35.2px */
-    margin-right: 0.6rem; /* 9.6px */
-  }
-
-  .conhecimento-header h3 {
-    font-size: 1rem; /* 22.4px */
-    padding-left: 1rem;
-  }
-
-  .conhecimento-text p {
-    font-size: 0.8rem; /* 15.2px */
-  }
-
-  .secao-projetos .splide {
-    width: 90%;
-    margin: 2rem auto; /* 32px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
-    flex: 0 0 calc(30% - 1rem); /* Mostra 2 cards por vez, com espaçamento */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
-    padding: 1%;
-    border-width: 0.2rem; /* 3.2px */
-    border-radius: 0.8rem; /* 12.8px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
-    max-height: 45vh;
-    margin-bottom: 1rem;
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.9rem; /* 30.4px */
-    margin-bottom: 0.5rem;
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.95rem; /* 15.2px */
-    margin-bottom: 0.7rem; /* 11.2px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.85rem; /* 13.6px */
-    margin-bottom: 0.9rem;
-  }
-
-  .splide__slide .card-info button {
-    width: 8rem; /* 128px */
-    height: 2.4rem; /* 38.4px */
-    font-size: 1rem; /* 16px */
-  }
-
-  .splide__slide .card-info button a {
-    font-size: 1.15rem; /* 18.4px */
-  }
-
-  .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2.5rem !important; /* 40px */
-    padding: 0.9rem !important; /* 14.4px */
-  }
-
-  .profile {
-    padding: 4%; /* Padding um pouco menor que o padrão */
-    flex-direction: row; /* Volta a galeria e a descrição lado a lado */
-    justify-content: center; /* Centraliza os dois blocos */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    text-align: left; /* Volta ao alinhamento padrão */
-  }
-
-  .gallery {
-    grid-template-columns: repeat(3, 0.7fr); /* 3 colunas, com largura um pouco maior por fração */
-    gap: 0.7rem; /* 11.2px */
-    width: auto; /* Deixa a largura automática para o grid */
-    margin-bottom: 0; /* Remove margem inferior se voltar a ser lado a lado */
-  }
-
-  .gallery-item img {
-    width: 80%; /* Ajusta a largura da imagem no item */
-    height: 90%;
-  }
-
-  .description {
-    max-width: 45%; /* Reduz um pouco a largura máxima para caber lado a lado */
-    font-size: 0.8rem; /* 17.6px */
-    line-height: 1.5;
-    margin-left: 1.5rem; /* 24px, adiciona uma margem para separar da galeria */
-    padding: 0; /* Remove padding horizontal extra */
-  }
-
-  .description blockquote {
-    padding-left: 0.625rem; /* 10px */
-    border-left-width: 0.2rem; /* 3.2px */
-    margin-top: 1rem; /* 16px */
-  }
-
-  .contatos {
-    margin-top: 5rem; /* 80px */
-    padding-bottom: 3rem; /* 48px */
-  }
-
-  .contato-wrapper form {
-    margin: 0 20%; /* Margem um pouco mais reduzida que o padrão */
-    padding: 4%; /* Padding percentual ligeiramente menor */
-    border-width: 0.18rem; /* 2.88px */
-    box-shadow: 0 0.45rem 0.9rem 0.9rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.5rem; /* 8px */
-    gap: 0.6rem; /* 9.6px */
-  }
-
-  #contato label {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 0.3rem; /* 4.8px */
-  }
-
-  #contato input,
-  #contato textarea {
-    padding: 0.6rem; /* 9.6px */
-    margin-bottom: 1rem; /* 16px */
-    font-size: 0.875rem; /* 14px */
-    border-width: 0.1rem; /* 1.6px */
-  }
-
-  .modal-content {
-    padding: 1.1rem; /* 17.6px */
-    border-radius: 0.5rem; /* 8px */
-    width: 80%; /* Um pouco mais largo */
-    max-width: 30rem; /* 480px */
-    margin: 2rem auto; /* 32px */
-    border-width: 0.2rem; /* 3.2px */
-    box-shadow: 0 0.5rem 1rem 1rem #6a309373;
-  }
-
-  .orcamento-wrapper h1 {
-    font-size: 1.9rem; /* 30.4px */
-    margin-bottom: 1rem; /* 16px */
-  }
-
-  .orcamento-wrapper form {
-    padding: 9%;
-    gap: 0.625rem; /* 10px */
-  }
-
-  .close-btn {
-    font-size: 1.7rem; /* 27.2px */
-    margin-bottom: 0.5rem; /* 8px */
-  }
-
-  .orcamento-wrapper textarea,
-  .orcamento-wrapper input[type="number"],
-  .orcamento-wrapper input[type="range"] {
-    padding: 0.6rem; /* 9.6px */
-    height: 7.5rem; /* 120px */
-    margin-bottom: 1rem; /* 16px */
-    font-size: 0.98rem; /* 15.68px */
-    border-width: 0.1rem; /* 1.6px */
-  }
-
-  .orcamento-wrapper input[type="checkbox"] + label,
-  .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.95rem; /* 15.2px */
-  }
-
-  .orcamento-wrapper .group-layout {
-    margin-bottom: 1rem; /* 16px */
-  }
-
-  .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.5rem; /* 8px */
-  }
-
-  .orcamento-wrapper .group-layout label {
-    margin-left: 0.5rem; /* 8px */
-  }
-
-  .orcamento-wrapper input[type="submit"] {
-    padding: 0.625rem 2rem; /* 10px vertical, 32px horizontal */
-    font-size: 1rem; /* 16px */
-    border-radius: 0.5rem; /* 8px */
-  }
-
-  footer {
-    margin-top: 1.5rem; /* 24px */
-    padding: 1rem 2rem; /* 16px vertical, 32px horizontal */
-  }
-
-  footer p.copy {
-    font-size: 0.95rem; /* 15.2px */
-  }
-}
-
-/* ---------------------------------------------- */
-/* Landscape (orientação de paisagem para celulares e tablets) */
-/* Aplica-se quando a tela está mais larga que alta, até 900px de largura */
-/* ---------------------------------------------- */
-@media screen and (orientation: landscape) and (max-width: 900px) {
-  header nav {
-    padding: 0.8rem 1.5rem; /* 12.8px vertical, 24px horizontal */
-  }
-
-  header nav div.logo {
-    height: 8vw; /* Ou um valor fixo em rem/px se preferir, mas vw é flexível */
-  }
-
-  header nav section.nav {
-    flex-direction: row; /* Tentar manter logo e menu lado a lado */
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav section.nav div.links {
-    display: flex; /* Exibe os links por padrão em paisagem, se houver espaço */
-    flex-grow: 1;
-    justify-content: flex-end; /* Alinha à direita */
-    margin-right: 1rem; /* Um pouco de margem para não colar no hambúrguer */
-  }
-
-  header nav section.nav ul.nav-links {
-    gap: 1.5rem; /* 24px de espaçamento para caber mais */
-  }
-
-  header nav section.nav ul.nav-links li a {
-    font-size: 1rem; /* 16px, para caber mais links */
-    padding: 0.2rem 0.5rem; /* Menos padding */
-  }
-
-  header nav section.nav div.hamburger {
-    display: none; /* Esconde o hambúrguer se o menu completo couber */
-  }
-
-  /* Se o menu hambúrguer for necessário em paisagem (pouca largura),
-     você pode adicionar uma media query específica para ele:
-     @media screen and (orientation: landscape) and (max-width: 600px) { ... display: flex; ... }
-     E ajustar o .links.active para essa orientação.
-  */
-
-  /* Container principal do conteúdo */
-  div.container {
-    flex-direction: row; /* Mantém intro e imagem lado a lado */
-    padding: 2rem 1rem; /* 32px vertical, 16px horizontal */
-    align-items: center;
-    text-align: left;
-  }
-
-  div.intro {
-    max-width: 55%; /* Dá mais espaço para a imagem */
-    padding: 2%;
-  }
-
-  div.intro h1 {
-    font-size: 1.8rem; /* 28.8px */
-    margin-bottom: 0.8rem;
-  }
-
-  div.intro h1 p {
-    font-size: 1.1rem; /* 17.6px */
-    margin-bottom: 0.8rem;
-  }
-
-  div.intro h4 {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 0.6rem;
-  }
-
-  div.social a i {
-    font-size: 1.8rem;
-  }
-
-  div.curriculum {
-    margin-top: 1.2rem; /* 19.2px */
-  }
-
-  div.curriculum a {
-    font-size: 0.9rem;
-    padding: 2% 4%;
-  }
-
-  .img-wrapper {
-    height: auto;
-    padding: 2%;
-  }
-
-  .img-wrapper img {
-    height: 50vh; /* Ajusta a imagem para caber na tela paisagem */
-    max-width: 40vw; /* Limita a largura da imagem */
-  }
-
-  div.conhecimentos {
-    /* Mantém a estrutura de grid original, mas ajusta tamanhos e espaçamento */
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 4rem); /* Linhas mais curtas para telas horizontais */
-    row-gap: 0.8rem; /* 12.8px */
-    padding: 1.5rem; /* 24px */
-  }
-
-  /* Posições dos cards e imagem permanecem as mesmas */
-  .conhecimento:nth-child(1) { grid-column: 4 / 7; grid-row: 1 / 3; }
-  .conhecimento:nth-child(2) { grid-column: 3 / 6; grid-row: 3 / 5; }
-  .conhecimento:nth-child(3) { grid-column: 4 / 7; grid-row: 5 / -1; }
-  .conhecimento:nth-child(4) { grid-column: 11 / 14; grid-row: 1 / 3; }
-  .conhecimento:nth-child(5) { grid-column: 12 / 15; grid-row: 3 / 5; }
-  .conhecimento:nth-child(6) { grid-column: 11 / 14; grid-row: 5 / -1; }
-
-  .conhecimentos-img-wrapper {
-    grid-column: 7 / 11;
-    grid-row: 2 / 6;
-  }
-
-  .conhecimentos-img-wrapper img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-  }
-
-  .sessao-header {
-    margin: 2rem 5%; /* Margem reduzida para o título */
-  }
-
-  .sessao-header h1 {
-    font-size: 0.2rem; /* 15.2px */
-    padding: 0.4rem 0.8rem; /* 6.4px vertical, 12.8px horizontal */
-  }
-
-  .conhecimento-header i {
-    font-size: 1.2rem; /* 28.8px */
-    margin-right: 0.4rem;
-  }
-
-  .conhecimento-header h3 {
-    font-size: 1rem; /* 19.2px */
-    padding-left: 0.8rem;
-  }
-
-  .conhecimento-text p {
-    font-size: 0.5rem; /* 13.6px */
-  }
-
-  .secao-projetos .splide {
-    width: 90%;
-    margin: 1rem auto; /* 16px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
-    flex: 0 0 calc(15% - 0.5rem); /* Tentar mostrar 2 cards, ajustando para o gap */
-    gap: 1rem; /* Reduz o gap para caber mais */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
-    padding: 1%;
-    border-width: 0.15rem; /* 2.4px */
-    border-radius: 0.7rem; /* 11.2px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
-    max-height: 30vh; /* Reduz bastante a altura da imagem para não esticar muito a tela */
-    margin-bottom: 0.8rem;
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info {
-    padding: 0 0.8rem;
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.3rem; /* 4.8px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.85rem; /* 13.6px */
-    margin-bottom: 0.5rem; /* 8px */
-  }
-
-  .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.75rem; /* 12px */
-    margin-bottom: 0.7rem; /* 11.2px */
-  }
-
-  .splide__slide .card-info button {
-    width: 6.5rem; /* 104px */
-    height: 2rem; /* 32px */
-    font-size: 0.85rem; /* 13.6px */
-  }
-
-  .splide__slide .card-info button a {
-    font-size: 0.95rem; /* 15.2px */
-  }
-
-  .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2rem !important; /* 32px */
-    padding: 0.6rem !important; /* 9.6px */
-  }
-
-  .profile {
-    padding: 3%;
-    flex-direction: row; /* Tenta manter lado a lado se houver espaço */
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas para economizar espaço horizontal */
-    gap: 0.5rem; /* 8px */
-    width: 45%; /* Largura da galeria */
-    margin-right: 1rem; /* Espaço entre galeria e texto */
-  }
-
-  .gallery-item img {
-    width: 90%; /* Aumenta a largura da imagem para preencher o item */
-    height: 80%; /* Altura ligeiramente menor */
-  }
-
-  .description {
-    max-width: 50%; /* Largura da descrição */
-    font-size: 0.95rem; /* 15.2px */
-    line-height: 1.4;
-    margin-left: 1rem; /* 16px, garante espaçamento */
-    padding: 0;
-  }
-
-  .description blockquote {
-    padding-left: 0.5rem; /* 8px */
-    border-left-width: 0.15rem; /* 2.4px */
-    margin-top: 0.8rem;
-  }
-
-  .contatos {
-    margin-top: 3.5rem; /* 56px */
-    padding-bottom: 2.5rem; /* 40px */
-  }
-
-  .contato-wrapper form {
-    margin: 0 15%; /* Margem lateral para tablets em paisagem */
-    padding: 4%;
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.35rem 0.7rem 0.7rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.45rem; /* 7.2px */
-    gap: 0.5rem; /* 8px */
-  }
-
-  #contato label {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.2rem; /* 3.2px */
-  }
-
-  #contato input,
-  #contato textarea {
-    padding: 0.5rem; /* 8px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.8rem; /* 12.8px */
-    border-width: 0.08rem; /* 1.28px */
-  }
-
-  .modal-content {
-    padding: 0.9rem; /* 14.4px */
-    border-radius: 0.45rem; /* 7.2px */
-    width: 70%; /* Mais largo em paisagem */
-    max-width: 28rem; /* 448px */
-    margin: 1rem auto; /* 16px, reduz margem vertical */
-  }
-
-  .orcamento-wrapper h1 {
-    font-size: 1.7rem; /* 27.2px */
-    margin-bottom: 0.8rem; /* 12.8px */
-  }
-
-  .orcamento-wrapper form {
-    padding: 7%;
-    gap: 0.5rem; /* 8px */
-  }
-
-  .close-btn {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.3rem; /* 4.8px */
-  }
-
-  .orcamento-wrapper textarea,
-  .orcamento-wrapper input[type="number"],
-  .orcamento-wrapper input[type="range"] {
-    padding: 0.5rem; /* 8px */
-    height: 6rem; /* 96px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.85rem; /* 13.6px */
-  }
-
-  .orcamento-wrapper input[type="checkbox"] + label,
-  .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.8rem; /* 12.8px */
-  }
-
-  .orcamento-wrapper .group-layout {
-    margin-bottom: 0.8rem;
-  }
-
-  .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.4rem;
-  }
-
-  .orcamento-wrapper .group-layout label {
-    margin-left: 0.4rem;
-  }
-
-  .orcamento-wrapper input[type="submit"] {
-    padding: 0.5rem 1.6rem; /* 8px vertical, 25.6px horizontal */
-    font-size: 0.85rem; /* 13.6px */
-  }
-
-  footer {
-    margin-top: 1rem; /* 16px */
-    padding: 0.8rem 1.2rem; /* 12.8px vertical, 19.2px horizontal */
-  }
-
-  footer p.copy {
-    font-size: 0.85rem; /* 13.6px */
-  }
 }
