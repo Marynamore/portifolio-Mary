@@ -3,7 +3,6 @@
 /* ============================================== */
 
 /* ---------------------------------------------- */
-/* Extra Small devices (smartphones, 0px to 424px) */
 /* Celulares muito pequenos (Retrato) */
 /* ---------------------------------------------- */
 @media (max-width: 424px) {
@@ -48,7 +47,7 @@
     right: 5%;
     left: 5%;
     transform: translateX(0);
-    z-index: 200; /* Garante que o menu fique acima de outros elementos */
+    z-index: 200;
     background: rgba(0, 0, 0, 0.9);
   }
 
@@ -137,7 +136,7 @@
     padding: 1rem; 
   }
 
-  /* Resetando as propriedades de grid para que o flexbox assuma o controle */
+
   .conhecimento,
   .conhecimento:nth-child(1),
   .conhecimento:nth-child(2),
@@ -148,8 +147,8 @@
   .conhecimentos-img-wrapper {
     grid-column: auto;
     grid-row: auto;
-    width: 90%; /* Ajusta a largura dos cards e da imagem */
-    margin: 0 auto; /* Centraliza */
+    width: 90%;
+    margin: 0 auto;
   }
 
   .conhecimentos-img-wrapper {
@@ -295,101 +294,100 @@
 
   .contato-wrapper form {
     margin: 0 5%;
-    padding: 6%; /* Aumenta um pouco o padding para dar mais ar */
-    border-width: 0.1rem; /* 1.6px */
-    box-shadow: 0 0.3rem 0.6rem 0.6rem #6a309373; /* Sombra um pouco menor */
-    border-radius: 0.4rem; /* 6.4px */
-    gap: 0.5rem; /* 8px */
+    padding: 6%;
+    border-width: 0.1rem;
+    box-shadow: 0 0.3rem 0.6rem 0.6rem #6a309373;
+    border-radius: 0.4rem;
+    gap: 0.5rem;
   }
 
   #contato label {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.2rem; /* 3.2px */
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
   }
 
   #contato input,
   #contato textarea {
-    padding: 0.5rem; /* 8px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.8rem; /* 12.8px */
-    border-width: 0.08rem; /* 1.28px */
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    border-width: 0.08rem;
   }
 
   .modal {
-    background-repeat: no-repeat; /* Ajusta para que a imagem não se repita */
-    background-position: center; /* Centraliza a imagem */
-    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .modal-content {
-    padding: 0.8rem; /* 12.8px */
-    border-radius: 0.4rem; /* 6.4px */
-    width: 95%; /* Ocupa quase toda a largura */
-    margin: 1rem auto; /* 16px */
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373; /* Sombra ajustada */
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    width: 95%;
+    margin: 1rem auto; 
+    border-width: 0.15rem; 
+    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373;
   }
 
   .orcamento-wrapper h1 {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.8rem; /* 12.8px */
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
   }
 
   .orcamento-wrapper form {
-    padding: 6%; /* Padding do formulário */
-    gap: 0.5rem; /* 8px */
+    padding: 6%;
+    gap: 0.5rem;
   }
 
   .close-btn {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.3rem; /* 4.8px */
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
   }
 
   .orcamento-wrapper textarea,
   .orcamento-wrapper input[type="number"],
   .orcamento-wrapper input[type="range"] {
-    padding: 0.5rem; /* 8px */
-    height: 6rem; /* 96px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.9rem; /* 14.4px */
-    border-width: 0.08rem; /* 1.28px */
+    padding: 0.5rem;
+    height: 6rem; 
+    margin-bottom: 0.8rem; 
+    font-size: 0.9rem; 
+    border-width: 0.08rem; 
   }
 
   .orcamento-wrapper input[type="checkbox"] + label,
   .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.85rem; /* 13.6px */
+    font-size: 0.85rem; 
   }
 
   .orcamento-wrapper .group-layout {
-    margin-bottom: 0.8rem; /* 12.8px */
+    margin-bottom: 0.8rem; 
   }
 
   .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.4rem; /* 6.4px */
+    margin-bottom: 0.4rem; 
   }
 
   .orcamento-wrapper .group-layout label {
-    margin-left: 0.4rem; /* 6.4px */
+    margin-left: 0.4rem; 
   }
 
   .orcamento-wrapper input[type="submit"] {
-    padding: 0.5rem 1.5rem; /* 8px vertical, 24px horizontal */
-    font-size: 0.9rem; /* 14.4px */
-    border-radius: 0.4rem; /* 6.4px */
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem; 
+    border-radius: 0.4rem; 
   }
 
   footer {
-    margin-top: 1rem; /* 16px */
-    padding: 0.8rem 1rem; /* 12.8px vertical, 16px horizontal */
+    margin-top: 1rem; 
+    padding: 0.8rem 1rem;
   }
 
   footer p.copy {
-    font-size: 0.8rem; /* 12.8px */
+    font-size: 0.8rem; 
   }
 }
 
 /* ---------------------------------------------- */
-/* Small devices (tablets and some phones, 425px to 767px) */
 /* Sua media query anterior, ajustada para esta faixa */
 /* ---------------------------------------------- */
 @media (min-width: 425px) and (max-width: 767px) {
@@ -398,7 +396,7 @@
   }
 
   header nav {
-    padding: 1rem; /* 16px */
+    padding: 1rem; 
   }
 
   header nav section.nav {
@@ -408,7 +406,7 @@
   }
 
   header nav div.logo {
-    height: 8vw; /* 12.8px na tela 425px, ajusta bem */
+    height: 8vw;
     margin-bottom: 1rem;
   }
 
@@ -428,13 +426,13 @@
     padding: 1rem ;
     top: 1.5rem;
     width: 60%;
-    height: auto; /* Altura se ajusta ao conteúdo */
+    height: auto;
     max-height: 80vh;
     overflow-y: auto;
-    position: fixed; /* Mantém o menu fixo e sobreposto */
-    right: 0; /* Alinha à direita */
-    left: auto; /* Desfaz o left para não conflitar */
-    z-index: 200; /* Garante que o menu fique acima de outros elementos */
+    position: fixed;
+    right: 0;
+    left: auto;
+    z-index: 200;
     background: rgba(0, 0, 0, 0.9);
   }
 
@@ -454,14 +452,14 @@
   header nav section.nav div.hamburger {
     display: flex;
     align-self: flex-end;
-    position: absolute; /* Ajusta o posicionamento do hambúrguer */
+    position: absolute;
     top: 1rem;
     right: 1rem;
   }
 
   /* Container principal do conteúdo */
   div.container {
-    padding: 5rem 1.5rem; /* 64px vertical, 24px horizontal */
+    padding: 5rem 1.5rem;
     align-items: center;
     text-align: center;
   }
@@ -469,12 +467,12 @@
   div.intro {
     max-width: 90%;
     padding:  4%;
-    margin-bottom: 2rem; /* 32px */
+    margin-bottom: 2rem; 
   }
 
   div.intro h1 {
     font-size: 1.2rem;
-    margin-bottom: 1rem; /* 16px */
+    margin-bottom: 1rem; 
   }
 
   div.intro h1 p {
@@ -484,7 +482,7 @@
 
   div.intro h4 {
     font-size: 1rem;
-    margin-bottom: 0.9rem; /* 14.4px */
+    margin-bottom: 0.9rem; 
   }
 
   div.social {
@@ -493,16 +491,16 @@
   }
 
   div.social a i {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem; 
   }
 
   div.curriculum {
-    margin-top: 1.5rem; /* 24px */
+    margin-top: 1.5rem; 
   }
 
   div.curriculum a {
-    font-size: 1rem; /* 16px */
-    padding: 2.5% 5%; /* Ajusta padding */
+    font-size: 1rem; 
+    padding: 2.5% 5%; 
   }
 
   .img-wrapper {
@@ -511,23 +509,22 @@
   }
 
   .img-wrapper img {
-    height: 45vh; /* Altura da imagem para celulares/tablets pequenos */
+    height: 45vh;
   }
 
   div.conhecimentos {
-    /* Mantendo a estrutura de grid mais simples para essa faixa, como você tinha na media query */
     display: grid;
     grid-template-areas:
       "top-gnu top-gnu top-gnu"
       "left-one img-wrapper right-one"
       "left-two img-wrapper right-two"
       "bottom-git bottom-git bottom-git";
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    grid-template-rows: repeat(4, auto); /* Altura das linhas se ajusta ao conteúdo */
-    gap: 1.5rem; /* 24px de espaçamento */
-    margin: 5% auto; /* Centraliza a grade horizontalmente */
-    padding: 1.5rem; /* 24px de padding geral */
-    text-align: center; /* Centraliza o texto dentro dos cards */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 1.5rem;
+    margin: 5% auto;
+    padding: 1.5rem;
+    text-align: center;
   }
 
   .conhecimento:nth-child(1) { grid-area: top-gnu; }
@@ -538,8 +535,8 @@
   .conhecimento:nth-child(6) { grid-area: bottom-git; }
 
   .conhecimentos-img-wrapper {
-    grid-area: img-wrapper; /* Nome da área para a imagem */
-    width: auto; /* Largura automática para se ajustar à célula da grid */
+    grid-area: img-wrapper;
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
@@ -548,221 +545,221 @@
   }
 
   .conhecimentos-img-wrapper img {
-    max-width: 25vh; /* Largura da imagem, agora relativa à altura da viewport */
+    max-width: 25vh;
     height: auto;
   }
 
   .sessao-header {
-    margin: 4rem 10%; /* Ajusta margem do título da seção */
+    margin: 4rem 10%;
   }
 
   .sessao-header h1 {
-    font-size: 1rem; /* 16px */
-    padding: 0.5rem 1.1rem; /* 8px vertical, 17.6px horizontal */
+    font-size: 1rem; 
+    padding: 0.5rem 1.1rem;
   }
 
   .conhecimento-header {
-    justify-content: center; /* Centraliza ícone e título */
-    padding-bottom: 0.625rem; /* 10px */
+    justify-content: center;
+    padding-bottom: 0.625rem; 
   }
 
   .conhecimento-header i {
-    font-size: 1rem; /* 28.8px */
-    margin-right: 0.4rem; /* 6.4px */
+    font-size: 1rem; 
+    margin-right: 0.4rem; 
   }
 
   .conhecimento-header h3 {
-    font-size: 1rem; /* 20.8px */
-    padding-left: 0.8rem; /* 12.8px */
+    font-size: 1rem; 
+    padding-left: 0.8rem; 
   }
 
   .conhecimento-text {
-    margin-top: 0.8rem; /* 12.8px */
+    margin-top: 0.8rem; 
   }
 
   .conhecimento-text p {
-    font-size: 0.7rem; /* 14.4px */
+    font-size: 0.7rem; 
   }
 
   .secao-projetos .splide {
     width: 90%;
-    margin: 1.5rem auto; /* 24px */
+    margin: 1.5rem auto; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
-    flex: 0 0 calc(15% - 1rem); /* Cada slide ocupa quase 100% da largura, mostrando 1 por vez */
+    flex: 0 0 calc(15% - 1rem); /* Cada slide ocupa 15% da largura, mostrando 1 por vez */
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
     padding: 1.5%;
-    border-width: 0.18rem; /* 2.88px */
-    border-radius: 0.7rem; /* 11.2px */
+    border-width: 0.18rem; 
+    border-radius: 0.7rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
     max-height: 40vh;
-    margin-bottom: 0.9rem; /* 14.4px */
+    margin-bottom: 0.9rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info {
-    padding: 0 0.9rem; /* 14.4px horizontal */
+    padding: 0 0.9rem;
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.8rem; /* 28.8px */
-    margin-bottom: 0.45rem; /* 7.2px */
+    font-size: 1.8rem; 
+    margin-bottom: 0.45rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.65rem; /* 10.4px */
+    font-size: 0.9rem; 
+    margin-bottom: 0.65rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.85rem; /* 13.6px */
-    margin-bottom: 0.9rem; /* 14.4px */
+    font-size: 0.85rem; 
+    margin-bottom: 0.9rem; 
   }
 
   .splide__slide .card-info button {
-    width: 7.5rem; /* 120px */
-    height: 2.3rem; /* 36.8px */
-    font-size: 0.95rem; /* 15.2px */
+    width: 7.5rem; 
+    height: 2.3rem;
+    font-size: 0.95rem; 
   }
 
   .splide__slide .card-info button a {
-    font-size: 1.1rem; /* 17.6px */
+    font-size: 1.1rem; 
   }
 
   .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2.2rem !important; /* 35.2px */
-    padding: 0.8rem !important; /* 12.8px */
+    font-size: 2.2rem !important; 
+    padding: 0.8rem !important; 
   }
 
   .profile {
-    padding: 4%; /* Ajusta padding */
-    flex-direction: column; /* Empilha a galeria e a descrição */
-    align-items: center; /* Centraliza itens */
-    text-align: center; /* Centraliza texto */
+    padding: 4%; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
-    gap: 0.8rem; /* 12.8px */
-    width: 80%; /* Largura um pouco mais contida */
-    margin-bottom: 2.5rem; /* Espaço entre a galeria e a descrição */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem; 
+    width: 80%;
+    margin-bottom: 2.5rem;
   }
 
   .gallery-item img {
-    width: 85%; /* Aumenta um pouco mais a largura da imagem */
+    width: 85%;
     height: 90%;
   }
 
   .description {
-    max-width: 85%; /* Ocupa mais largura */
-    font-size: 1rem; /* 16px */
+    max-width: 85%;
+    font-size: 1rem; 
     line-height: 1.45;
-    margin-left: 0; /* Remove a margem lateral */
-    padding: 0 1.5rem; /* Adiciona um padding horizontal */
+    margin-left: 0;
+    padding: 0 1.5rem;
   }
 
   .description blockquote {
-    padding-left: 0.6rem; /* 9.6px */
-    border-left-width: 0.18rem; /* 2.88px */
-    margin-top: 1rem; /* 16px */
+    padding-left: 0.6rem; 
+    border-left-width: 0.18rem; 
+    margin-top: 1rem; 
   }
 
   .contatos {
-    margin-top: 4rem; /* 64px */
-    padding-bottom: 2.5rem; /* 40px */
+    margin-top: 4rem; 
+    padding-bottom: 2.5rem; 
   }
 
   .contato-wrapper form {
-    margin: 0 10%; /* Margem da sua media query anterior */
+    margin: 0 10%;
     padding: 5%;
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.45rem; /* 7.2px */
-    gap: 0.55rem; /* 8.8px */
+    border-width: 0.15rem; 
+    box-shadow: 0 0.4rem 0.8rem 0.8rem #6a309373;
+    border-radius: 0.45rem; 
+    gap: 0.55rem; 
   }
 
   #contato label {
-    font-size: 0.95rem; /* 15.2px */
-    margin-bottom: 0.25rem; /* 4px */
+    font-size: 0.95rem; 
+    margin-bottom: 0.25rem; 
   }
 
   #contato input,
   #contato textarea {
-    padding: 0.55rem; /* 8.8px */
-    margin-bottom: 0.9rem; /* 14.4px */
-    font-size: 0.85rem; /* 13.6px */
-    border-width: 0.09rem; /* 1.44px */
+    padding: 0.55rem; 
+    margin-bottom: 0.9rem; 
+    font-size: 0.85rem; 
+    border-width: 0.09rem; 
   }
 
   .modal-content {
-    padding: 1rem; /* 16px */
-    border-radius: 0.45rem; /* 7.2px */
+    padding: 1rem; 
+    border-radius: 0.45rem; 
     width: 90%;
-    max-width: 25rem; /* 400px */
-    margin: 1.5rem auto; /* 24px */
-    border-width: 0.18rem; /* 2.88px */
+    max-width: 25rem; 
+    margin: 1.5rem auto; 
+    border-width: 0.18rem; 
     box-shadow: 0 0.45rem 0.9rem 0.9rem #6a309373;
   }
 
   .orcamento-wrapper h1 {
-    font-size: 1.8rem; /* 28.8px */
-    margin-bottom: 0.9rem; /* 14.4px */
+    font-size: 1.8rem; 
+    margin-bottom: 0.9rem; 
   }
 
   .orcamento-wrapper form {
     padding: 8%;
-    gap: 0.6rem; /* 9.6px */
+    gap: 0.6rem; 
   }
 
   .close-btn {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.4rem; /* 6.4px */
+    font-size: 1.6rem; 
+    margin-bottom: 0.4rem; 
   }
 
   .orcamento-wrapper textarea,
   .orcamento-wrapper input[type="number"],
   .orcamento-wrapper input[type="range"] {
-    padding: 0.55rem; /* 8.8px */
-    height: 7rem; /* 112px */
-    margin-bottom: 0.9rem; /* 14.4px */
-    font-size: 0.95rem; /* 15.2px */
-    border-width: 0.09rem; /* 1.44px */
+    padding: 0.55rem; 
+    height: 7rem; 
+    margin-bottom: 0.9rem; 
+    font-size: 0.95rem; 
+    border-width: 0.09rem; 
   }
 
   .orcamento-wrapper input[type="checkbox"] + label,
   .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.9rem; /* 14.4px */
+    font-size: 0.9rem; 
   }
 
   .orcamento-wrapper .group-layout {
-    margin-bottom: 0.9rem; /* 14.4px */
+    margin-bottom: 0.9rem; 
   }
 
   .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.45rem; /* 7.2px */
+    margin-bottom: 0.45rem; 
   }
 
   .orcamento-wrapper .group-layout label {
-    margin-left: 0.45rem; /* 7.2px */
+    margin-left: 0.45rem; 
   }
 
   .orcamento-wrapper input[type="submit"] {
-    padding: 0.6rem 1.8rem; /* 9.6px vertical, 28.8px horizontal */
-    font-size: 0.95rem; /* 15.2px */
-    border-radius: 0.45rem; /* 7.2px */
+    padding: 0.6rem 1.8rem;
+    font-size: 0.95rem; 
+    border-radius: 0.45rem; 
   }
 
   footer {
-    margin-top: 1.2rem; /* 19.2px */
-    padding: 0.9rem 1.5rem; /* 14.4px vertical, 24px horizontal */
+    margin-top: 1.2rem;
+    padding: 0.9rem 1.5rem;
   }
 
   footer p.copy {
-    font-size: 0.9rem; /* 14.4px */
+    font-size: 0.9rem; 
   }
 }
 
@@ -771,21 +768,21 @@
 /* ---------------------------------------------- */
 @media (min-width: 768px) and (max-width: 1023px) {
   header {
-    height: 100vh; /* Mantém a altura total da viewport para telas maiores */
+    height: 100vh;
   }
 
   header nav {
-    padding: 1rem 2rem; /* Mantém o padding original */
+    padding: 1rem 2rem;
   }
 
   header nav section.nav {
-    flex-direction: row; /* Volta ao layout de linha */
+    flex-direction: row;
     align-items: center;
     width: 100%;
   }
 
   header nav div.logo {
-    height: 6vw; /* Logo um pouco menor que o padrão */
+    height: 6vw;
   }
 
   header nav div.logo img {
@@ -794,17 +791,17 @@
   }
 
   header nav section.nav div.links {
-    display: flex; /* Links visíveis */
-    justify-content: center; /* Centraliza os links no espaço restante */
-    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
   }
 
   header nav section.nav ul.nav-links {
-    gap: 3rem; /* 48px de espaçamento */
+    gap: 3rem;
   }
 
   header nav section.nav ul.nav-links li a {
-    font-size: 1.2rem; /* 19.2px */
+    font-size: 1.2rem;
   }
 
   header nav section.nav div.hamburger {
@@ -817,10 +814,10 @@
 
   /* Container principal do conteúdo */
   div.container {
-    padding: 5rem 2rem 0; /* 80px vertical, 32px horizontal */
-    flex-direction: row; /* Intro e imagem lado a lado */
+    padding: 5rem 2rem 0;
+    flex-direction: row;
     align-items: center;
-    text-align: left; /* Volta ao alinhamento padrão */
+    text-align: left;
   }
 
   div.intro {
@@ -829,26 +826,26 @@
   }
 
   div.intro h1 {
-    font-size: 2.2rem; /* 35.2px */
+    font-size: 2.2rem; 
     margin-bottom: 1rem;
   }
 
   div.intro h1 p {
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.5rem; 
     margin-bottom: 1rem;
   }
 
   div.intro h4 {
-    font-size: 1.3rem; /* 20.8px */
+    font-size: 1.3rem; 
     margin-bottom: 0.8rem;
   }
 
   div.social a i {
-    font-size: 2rem; /* 32px */
+    font-size: 2rem; 
   }
 
   div.curriculum {
-    margin-top: 2rem; /* 32px */
+    margin-top: 2rem; 
   }
 
   .img-wrapper {
@@ -861,12 +858,11 @@
   }
 
   div.conhecimentos {
-    /* Mantém a estrutura de grid original, mas com ajustes de tamanho */
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 5rem); /* 80px por linha, um pouco menor */
-    row-gap: 1rem; /* 16px */
-    padding: 2rem; /* 32px de padding */
+    grid-template-rows: repeat(6, 5rem);
+    row-gap: 1rem; 
+    padding: 2rem;
   }
 
   /* Posições dos cards permanecem as mesmas */
@@ -881,7 +877,7 @@
     grid-column: 7 / 11;
     grid-row: 2 / 6;
     width: 100%;
-    height: 100%; /* Garante que preencha o espaço da grade */
+    height: 100%;
   }
 
   .conhecimentos-img-wrapper img {
@@ -891,31 +887,31 @@
   }
 
   .sessao-header {
-    margin: 5% 10%; /* Ajusta margem do título da seção */
+    margin: 5% 10%;
   }
 
   .sessao-header h1 {
-    font-size: 1.1rem; /* 17.6px */
-    padding: 0.6rem 1.2rem; /* 9.6px vertical, 19.2px horizontal */
+    font-size: 1.1rem; 
+    padding: 0.6rem 1.2rem; 
   }
 
   .conhecimento-header i {
-    font-size: 1.6rem; /* 35.2px */
-    margin-right: 0.6rem; /* 9.6px */
+    font-size: 1.6rem; 
+    margin-right: 0.6rem; 
   }
 
   .conhecimento-header h3 {
-    font-size: 1rem; /* 22.4px */
+    font-size: 1rem; 
     padding-left: 1rem;
   }
 
   .conhecimento-text p {
-    font-size: 0.8rem; /* 15.2px */
+    font-size: 0.8rem; 
   }
 
   .secao-projetos .splide {
     width: 90%;
-    margin: 2rem auto; /* 32px */
+    margin: 2rem auto; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
@@ -924,8 +920,8 @@
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
     padding: 1%;
-    border-width: 0.2rem; /* 3.2px */
-    border-radius: 0.8rem; /* 12.8px */
+    border-width: 0.2rem; 
+    border-radius: 0.8rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
@@ -934,234 +930,227 @@
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.9rem; /* 30.4px */
+    font-size: 1.9rem; 
     margin-bottom: 0.5rem;
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.95rem; /* 15.2px */
-    margin-bottom: 0.7rem; /* 11.2px */
+    font-size: 0.95rem; 
+    margin-bottom: 0.7rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.85rem; /* 13.6px */
+    font-size: 0.85rem; 
     margin-bottom: 0.9rem;
   }
 
   .splide__slide .card-info button {
-    width: 8rem; /* 128px */
-    height: 2.4rem; /* 38.4px */
-    font-size: 1rem; /* 16px */
+    width: 8rem; 
+    height: 2.4rem; 
+    font-size: 1rem; 
   }
 
   .splide__slide .card-info button a {
-    font-size: 1.15rem; /* 18.4px */
+    font-size: 1.15rem; 
   }
 
   .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2.5rem !important; /* 40px */
-    padding: 0.9rem !important; /* 14.4px */
+    font-size: 2.5rem !important; 
+    padding: 0.9rem !important; 
   }
 
   .profile {
-    padding: 4%; /* Padding um pouco menor que o padrão */
-    flex-direction: row; /* Volta a galeria e a descrição lado a lado */
-    justify-content: center; /* Centraliza os dois blocos */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    text-align: left; /* Volta ao alinhamento padrão */
+    padding: 4%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .gallery {
-    grid-template-columns: repeat(3, 0.7fr); /* 3 colunas, com largura um pouco maior por fração */
-    gap: 0.7rem; /* 11.2px */
-    width: auto; /* Deixa a largura automática para o grid */
+    grid-template-columns: repeat(3, 0.7fr); 
+    gap: 0.7rem; 
+    width: auto;
     margin-bottom: 0; /* Remove margem inferior se voltar a ser lado a lado */
   }
 
   .gallery-item img {
-    width: 80%; /* Ajusta a largura da imagem no item */
+    width: 80%;
     height: 90%;
   }
 
   .description {
-    max-width: 45%; /* Reduz um pouco a largura máxima para caber lado a lado */
-    font-size: 0.8rem; /* 17.6px */
+    max-width: 45%;
+    font-size: 0.8rem; 
     line-height: 1.5;
-    margin-left: 1.5rem; /* 24px, adiciona uma margem para separar da galeria */
+    margin-left: 1.5rem;
     padding: 0; /* Remove padding horizontal extra */
   }
 
   .description blockquote {
-    padding-left: 0.625rem; /* 10px */
-    border-left-width: 0.2rem; /* 3.2px */
-    margin-top: 1rem; /* 16px */
+    padding-left: 0.625rem; 
+    border-left-width: 0.2rem; 
+    margin-top: 1rem; 
   }
 
   .contatos {
-    margin-top: 5rem; /* 80px */
-    padding-bottom: 3rem; /* 48px */
+    margin-top: 5rem;
+    padding-bottom: 3rem;
   }
 
   .contato-wrapper form {
-    margin: 0 20%; /* Margem um pouco mais reduzida que o padrão */
-    padding: 4%; /* Padding percentual ligeiramente menor */
-    border-width: 0.18rem; /* 2.88px */
-    box-shadow: 0 0.45rem 0.9rem 0.9rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.5rem; /* 8px */
-    gap: 0.6rem; /* 9.6px */
+    margin: 0 20%;
+    padding: 4%;
+    border-width: 0.18rem; 
+    box-shadow: 0 0.45rem 0.9rem 0.9rem #6a309373;
+    border-radius: 0.5rem; 
+    gap: 0.6rem; 
   }
 
   #contato label {
-    font-size: 1rem; /* 16px */
-    margin-bottom: 0.3rem; /* 4.8px */
+    font-size: 1rem; 
+    margin-bottom: 0.3rem; 
   }
 
   #contato input,
   #contato textarea {
-    padding: 0.6rem; /* 9.6px */
-    margin-bottom: 1rem; /* 16px */
-    font-size: 0.875rem; /* 14px */
-    border-width: 0.1rem; /* 1.6px */
+    padding: 0.6rem; 
+    margin-bottom: 1rem; 
+    font-size: 0.875rem; 
+    border-width: 0.1rem; 
   }
 
   .modal-content {
-    padding: 1.1rem; /* 17.6px */
-    border-radius: 0.5rem; /* 8px */
-    width: 80%; /* Um pouco mais largo */
-    max-width: 30rem; /* 480px */
-    margin: 2rem auto; /* 32px */
-    border-width: 0.2rem; /* 3.2px */
+    padding: 1.1rem; 
+    border-radius: 0.5rem; 
+    width: 80%;
+    max-width: 30rem;
+    margin: 2rem auto; 
+    border-width: 0.2rem; 
     box-shadow: 0 0.5rem 1rem 1rem #6a309373;
   }
 
   .orcamento-wrapper h1 {
-    font-size: 1.9rem; /* 30.4px */
-    margin-bottom: 1rem; /* 16px */
+    font-size: 1.9rem; 
+    margin-bottom: 1rem; 
   }
 
   .orcamento-wrapper form {
     padding: 9%;
-    gap: 0.625rem; /* 10px */
+    gap: 0.625rem; 
   }
 
   .close-btn {
-    font-size: 1.7rem; /* 27.2px */
-    margin-bottom: 0.5rem; /* 8px */
+    font-size: 1.7rem; 
+    margin-bottom: 0.5rem; 
   }
 
   .orcamento-wrapper textarea,
   .orcamento-wrapper input[type="number"],
   .orcamento-wrapper input[type="range"] {
-    padding: 0.6rem; /* 9.6px */
-    height: 7.5rem; /* 120px */
-    margin-bottom: 1rem; /* 16px */
-    font-size: 0.98rem; /* 15.68px */
-    border-width: 0.1rem; /* 1.6px */
+    padding: 0.6rem; 
+    height: 7.5rem; 
+    margin-bottom: 1rem; 
+    font-size: 0.98rem; 
+    border-width: 0.1rem; 
   }
 
   .orcamento-wrapper input[type="checkbox"] + label,
   .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.95rem; /* 15.2px */
+    font-size: 0.95rem; 
   }
 
   .orcamento-wrapper .group-layout {
-    margin-bottom: 1rem; /* 16px */
+    margin-bottom: 1rem; 
   }
 
   .orcamento-wrapper .group-layout > div {
-    margin-bottom: 0.5rem; /* 8px */
+    margin-bottom: 0.5rem; 
   }
 
   .orcamento-wrapper .group-layout label {
-    margin-left: 0.5rem; /* 8px */
+    margin-left: 0.5rem; 
   }
 
   .orcamento-wrapper input[type="submit"] {
-    padding: 0.625rem 2rem; /* 10px vertical, 32px horizontal */
-    font-size: 1rem; /* 16px */
-    border-radius: 0.5rem; /* 8px */
+    padding: 0.625rem 2rem;
+    font-size: 1rem; 
+    border-radius: 0.5rem; 
   }
 
   footer {
-    margin-top: 1.5rem; /* 24px */
-    padding: 1rem 2rem; /* 16px vertical, 32px horizontal */
+    margin-top: 1.5rem; 
+    padding: 1rem 2rem;
   }
 
   footer p.copy {
-    font-size: 0.95rem; /* 15.2px */
+    font-size: 0.95rem; 
   }
 }
 
 /* ---------------------------------------------- */
 /* Landscape (orientação de paisagem para celulares e tablets) */
-/* Aplica-se quando a tela está mais larga que alta, até 900px de largura */
 /* ---------------------------------------------- */
 @media screen and (orientation: landscape) and (max-width: 900px) {
   header nav {
-    padding: 0.8rem 1.5rem; /* 12.8px vertical, 24px horizontal */
+    padding: 0.8rem 1.5rem;
   }
 
   header nav div.logo {
-    height: 8vw; /* Ou um valor fixo em rem/px se preferir, mas vw é flexível */
+    height: 8vw;
   }
 
   header nav section.nav {
-    flex-direction: row; /* Tentar manter logo e menu lado a lado */
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   header nav section.nav div.links {
-    display: flex; /* Exibe os links por padrão em paisagem, se houver espaço */
+    display: flex;
     flex-grow: 1;
-    justify-content: flex-end; /* Alinha à direita */
-    margin-right: 1rem; /* Um pouco de margem para não colar no hambúrguer */
+    justify-content: flex-end;
+    margin-right: 1rem;
   }
 
   header nav section.nav ul.nav-links {
-    gap: 1.5rem; /* 24px de espaçamento para caber mais */
+    gap: 1.5rem;
   }
 
   header nav section.nav ul.nav-links li a {
-    font-size: 1rem; /* 16px, para caber mais links */
-    padding: 0.2rem 0.5rem; /* Menos padding */
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
   }
 
   header nav section.nav div.hamburger {
-    display: none; /* Esconde o hambúrguer se o menu completo couber */
+    display: none; 
   }
-
-  /* Se o menu hambúrguer for necessário em paisagem (pouca largura),
-     você pode adicionar uma media query específica para ele:
-     @media screen and (orientation: landscape) and (max-width: 600px) { ... display: flex; ... }
-     E ajustar o .links.active para essa orientação.
-  */
 
   /* Container principal do conteúdo */
   div.container {
-    flex-direction: row; /* Mantém intro e imagem lado a lado */
-    padding: 2rem 1rem; /* 32px vertical, 16px horizontal */
+    flex-direction: row;
+    padding: 2rem 1rem;
     align-items: center;
     text-align: left;
   }
 
   div.intro {
-    max-width: 55%; /* Dá mais espaço para a imagem */
+    max-width: 55%;
     padding: 2%;
   }
 
   div.intro h1 {
-    font-size: 1.8rem; /* 28.8px */
+    font-size: 1.8rem; 
     margin-bottom: 0.8rem;
   }
 
   div.intro h1 p {
-    font-size: 1.1rem; /* 17.6px */
+    font-size: 1.1rem; 
     margin-bottom: 0.8rem;
   }
 
   div.intro h4 {
-    font-size: 1rem; /* 16px */
+    font-size: 1rem; 
     margin-bottom: 0.6rem;
   }
 
@@ -1170,7 +1159,7 @@
   }
 
   div.curriculum {
-    margin-top: 1.2rem; /* 19.2px */
+    margin-top: 1.2rem;
   }
 
   div.curriculum a {
@@ -1184,16 +1173,15 @@
   }
 
   .img-wrapper img {
-    height: 50vh; /* Ajusta a imagem para caber na tela paisagem */
-    max-width: 40vw; /* Limita a largura da imagem */
+    height: 50vh;
+    max-width: 40vw;
   }
 
   div.conhecimentos {
-    /* Mantém a estrutura de grid original, mas ajusta tamanhos e espaçamento */
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 4rem); /* Linhas mais curtas para telas horizontais */
-    row-gap: 0.8rem; /* 12.8px */
-    padding: 1.5rem; /* 24px */
+    grid-template-rows: repeat(6, 4rem);
+    row-gap: 0.8rem; 
+    padding: 1.5rem; 
   }
 
   /* Posições dos cards e imagem permanecem as mesmas */
@@ -1216,31 +1204,31 @@
   }
 
   .sessao-header {
-    margin: 2rem 5%; /* Margem reduzida para o título */
+    margin: 2rem 5%;
   }
 
   .sessao-header h1 {
-    font-size: 0.2rem; /* 15.2px */
-    padding: 0.4rem 0.8rem; /* 6.4px vertical, 12.8px horizontal */
+    font-size: 0.2rem; 
+    padding: 0.4rem 0.8rem;
   }
 
   .conhecimento-header i {
-    font-size: 1.2rem; /* 28.8px */
+    font-size: 1.2rem; 
     margin-right: 0.4rem;
   }
 
   .conhecimento-header h3 {
-    font-size: 1rem; /* 19.2px */
+    font-size: 1rem;
     padding-left: 0.8rem;
   }
 
   .conhecimento-text p {
-    font-size: 0.5rem; /* 13.6px */
+    font-size: 0.5rem; 
   }
 
   .secao-projetos .splide {
     width: 90%;
-    margin: 1rem auto; /* 16px */
+    margin: 1rem auto; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide {
@@ -1250,12 +1238,12 @@
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card {
     padding: 1%;
-    border-width: 0.15rem; /* 2.4px */
-    border-radius: 0.7rem; /* 11.2px */
+    border-width: 0.15rem; 
+    border-radius: 0.7rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-img-wrapper {
-    max-height: 30vh; /* Reduz bastante a altura da imagem para não esticar muito a tela */
+    max-height: 30vh;
     margin-bottom: 0.8rem;
   }
 
@@ -1264,131 +1252,131 @@
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h2 {
-    font-size: 1.6rem; /* 25.6px */
-    margin-bottom: 0.3rem; /* 4.8px */
+    font-size: 1.6rem; 
+    margin-bottom: 0.3rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info h3 {
-    font-size: 0.85rem; /* 13.6px */
-    margin-bottom: 0.5rem; /* 8px */
+    font-size: 0.85rem; 
+    margin-bottom: 0.5rem; 
   }
 
   .secao-projetos .splide .splide__track ul.splide__list li.splide__slide .card .card-info p {
-    font-size: 0.75rem; /* 12px */
-    margin-bottom: 0.7rem; /* 11.2px */
+    font-size: 0.75rem; 
+    margin-bottom: 0.7rem; 
   }
 
   .splide__slide .card-info button {
-    width: 6.5rem; /* 104px */
-    height: 2rem; /* 32px */
-    font-size: 0.85rem; /* 13.6px */
+    width: 6.5rem; 
+    height: 2rem; 
+    font-size: 0.85rem; 
   }
 
   .splide__slide .card-info button a {
-    font-size: 0.95rem; /* 15.2px */
+    font-size: 0.95rem; 
   }
 
   .secao-projetos .splide .splide__arrows .splide__arrow {
-    font-size: 2rem !important; /* 32px */
-    padding: 0.6rem !important; /* 9.6px */
+    font-size: 2rem !important; 
+    padding: 0.6rem !important; 
   }
 
   .profile {
     padding: 3%;
-    flex-direction: row; /* Tenta manter lado a lado se houver espaço */
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: left;
   }
 
   .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas para economizar espaço horizontal */
-    gap: 0.5rem; /* 8px */
-    width: 45%; /* Largura da galeria */
-    margin-right: 1rem; /* Espaço entre galeria e texto */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; 
+    width: 45%;
+    margin-right: 1rem;
   }
 
   .gallery-item img {
-    width: 90%; /* Aumenta a largura da imagem para preencher o item */
-    height: 80%; /* Altura ligeiramente menor */
+    width: 90%;
+    height: 80%;
   }
 
   .description {
-    max-width: 50%; /* Largura da descrição */
-    font-size: 0.95rem; /* 15.2px */
+    max-width: 50%;
+    font-size: 0.95rem; 
     line-height: 1.4;
-    margin-left: 1rem; /* 16px, garante espaçamento */
+    margin-left: 1rem;
     padding: 0;
   }
 
   .description blockquote {
-    padding-left: 0.5rem; /* 8px */
-    border-left-width: 0.15rem; /* 2.4px */
+    padding-left: 0.5rem; 
+    border-left-width: 0.15rem; 
     margin-top: 0.8rem;
   }
 
   .contatos {
-    margin-top: 3.5rem; /* 56px */
-    padding-bottom: 2.5rem; /* 40px */
+    margin-top: 3.5rem; 
+    padding-bottom: 2.5rem; 
   }
 
   .contato-wrapper form {
-    margin: 0 15%; /* Margem lateral para tablets em paisagem */
+    margin: 0 15%;
     padding: 4%;
-    border-width: 0.15rem; /* 2.4px */
-    box-shadow: 0 0.35rem 0.7rem 0.7rem #6a309373; /* Sombra ajustada */
-    border-radius: 0.45rem; /* 7.2px */
-    gap: 0.5rem; /* 8px */
+    border-width: 0.15rem; 
+    box-shadow: 0 0.35rem 0.7rem 0.7rem #6a309373;
+    border-radius: 0.45rem; 
+    gap: 0.5rem; 
   }
 
   #contato label {
-    font-size: 0.9rem; /* 14.4px */
-    margin-bottom: 0.2rem; /* 3.2px */
+    font-size: 0.9rem; 
+    margin-bottom: 0.2rem; 
   }
 
   #contato input,
   #contato textarea {
-    padding: 0.5rem; /* 8px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.8rem; /* 12.8px */
-    border-width: 0.08rem; /* 1.28px */
+    padding: 0.5rem; 
+    margin-bottom: 0.8rem; 
+    font-size: 0.8rem; 
+    border-width: 0.08rem; 
   }
 
   .modal-content {
-    padding: 0.9rem; /* 14.4px */
-    border-radius: 0.45rem; /* 7.2px */
-    width: 70%; /* Mais largo em paisagem */
-    max-width: 28rem; /* 448px */
-    margin: 1rem auto; /* 16px, reduz margem vertical */
+    padding: 0.9rem; 
+    border-radius: 0.45rem; 
+    width: 70%;
+    max-width: 28rem; 
+    margin: 1rem auto;
   }
 
   .orcamento-wrapper h1 {
-    font-size: 1.7rem; /* 27.2px */
-    margin-bottom: 0.8rem; /* 12.8px */
+    font-size: 1.7rem; 
+    margin-bottom: 0.8rem; 
   }
 
   .orcamento-wrapper form {
     padding: 7%;
-    gap: 0.5rem; /* 8px */
+    gap: 0.5rem; 
   }
 
   .close-btn {
-    font-size: 1.5rem; /* 24px */
-    margin-bottom: 0.3rem; /* 4.8px */
+    font-size: 1.5rem; 
+    margin-bottom: 0.3rem; 
   }
 
   .orcamento-wrapper textarea,
   .orcamento-wrapper input[type="number"],
   .orcamento-wrapper input[type="range"] {
-    padding: 0.5rem; /* 8px */
-    height: 6rem; /* 96px */
-    margin-bottom: 0.8rem; /* 12.8px */
-    font-size: 0.85rem; /* 13.6px */
+    padding: 0.5rem; 
+    height: 6rem; 
+    margin-bottom: 0.8rem; 
+    font-size: 0.85rem; 
   }
 
   .orcamento-wrapper input[type="checkbox"] + label,
   .orcamento-wrapper input[type="radio"] + label {
-    font-size: 0.8rem; /* 12.8px */
+    font-size: 0.8rem; 
   }
 
   .orcamento-wrapper .group-layout {
@@ -1404,16 +1392,16 @@
   }
 
   .orcamento-wrapper input[type="submit"] {
-    padding: 0.5rem 1.6rem; /* 8px vertical, 25.6px horizontal */
-    font-size: 0.85rem; /* 13.6px */
+    padding: 0.5rem 1.6rem;
+    font-size: 0.85rem; 
   }
 
   footer {
-    margin-top: 1rem; /* 16px */
-    padding: 0.8rem 1.2rem; /* 12.8px vertical, 19.2px horizontal */
+    margin-top: 1rem; 
+    padding: 0.8rem 1.2rem;
   }
 
   footer p.copy {
-    font-size: 0.85rem; /* 13.6px */
+    font-size: 0.85rem;
   }
 }
