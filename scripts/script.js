@@ -66,7 +66,4 @@ document.addEventListener('click', (event) => {
 });
 
 const downloadButton = document.getElementById('downloadButton');
-downloadButton.addEventListener('click', () => {
-  // Aqui você pode adicionar alguma lógica extra para o botão de download, se necessário.
-  // No momento, o link direto no HTML já fará o download.
-});
+downloadButton.addEventListener('click', () => {});
